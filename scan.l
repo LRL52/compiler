@@ -1,5 +1,9 @@
 %{
 #include "token.h"
+#include <string.h>
+
+// char s[1000][1000];
+// int stk[1000], top;
 %}
 
 WHITE_SPACE	[ \t\n\r]+
@@ -44,8 +48,10 @@ WHITE_SPACE	[ \t\n\r]+
 "{"		{return Y_LBRACKET;}
 "}"		{return Y_RBRACKET;}
 ";"		{return Y_SEMICOLON;}
+\/\/.*{WHITE_SPACE} { /* ignore note */ }
+\/\*(\s|.)*?\*\/ { /* ignore note */ }
 
-{WHITE_SPACE}	{return 1;}
+{WHITE_SPACE}	{ }
 [0-9]+  {return num_INT;}
 [0-9]+\.[0-9]+ {return num_FLOAT;}
 [a-zA-Z_][a-zA-Z0-9_]*	{return Y_ID;}
@@ -54,14 +60,30 @@ WHITE_SPACE	[ \t\n\r]+
 
 %%
 
-int main(int argc, char **argv)
+int yyerror(char *s)
 {
-	int tok;
-
-	while(tok = yylex()) 
-	{
-		if(tok != 1)
-			printf("%d	%s\n",tok,yytext);
-
-	}
+	fprintf(stderr, "error: %s\n", s);
+	return 0;
 }
+
+int yywrap()
+{
+	return 1;
+}
+
+// int main(int argc, char **argv)
+// {
+// 	int tok;
+
+// 	while(tok = yylex()) {
+// 		if(tok != 1) {
+// 			//printf("%d	%s\n",tok,yytext);
+// 			stk[++top] = tok;
+// 			//s[top] = yytext;
+// 			sprintf(s[top], "%s", yytext);
+// 		}
+// 	}
+// 	for(int i = 1; i <= top; ++i) {
+// 		printf("%d %s\n", stk[i], s[i]);
+// 	}
+// }

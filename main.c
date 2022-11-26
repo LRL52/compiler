@@ -6,16 +6,8 @@
 #include "token.h"
 
 extern int yylex();
-extern int yylval;
+extern _YYLVAL yylval;
 extern char* yytext;
-
-int tok;
-
-void advance()
-{
-	tok = yylex();
-	printf("tok: %s\n", yytext);
-}
 
 typedef struct _ast ast;
 typedef struct _ast *past;
@@ -30,8 +22,32 @@ struct _ast{
 	past next;
 };
 
+#define MAXN 1005
+int tok;
+char s[MAXN][MAXN];
+int stk[MAXN], top;
+past tail;
+
+void advance() {
+	static int flag = 0, MAXTOP = 0;
+	if(!flag && top == MAXTOP) {
+		tok = yylex();
+		stk[++top] = tok;
+		sprintf(s[top], "%s", yytext);
+		if(top > MAXTOP) MAXTOP = top;
+		if(tok == 0) flag = 1;
+	} else {
+		tok = stk[++top];
+	}
+	//printf("tok: %s\n", yytext);
+}
+
+void back() {
+	tok = stk[--top];
+}
+
 past NewNode(past l, node_type type, past r) {
-    past ret = malloc(sizeof(ast));
+    past ret = (past)malloc(sizeof(ast));
     if(ret == NULL) {
         printf("run out of memory.\n");
         exit(0);
@@ -42,39 +58,72 @@ past NewNode(past l, node_type type, past r) {
     return ret;
 }
 
-past Block() {
-    assert(tok == Y_LBRACKET);
-    
+past Stmt() { //非空
+	past ret = NewNode(NULL, NULL_STMT, NULL);
+	tail = ret;
+	if(tok == Y_RETURN) {
+		ret->nodeType = RETURN_STMT;
+		advance();
+		if(tok == Y_SEMICOLON) return ret;
+	} else {
+		back();
+		free(ret);
+		return NULL;
+	}
 }
 
-// void showAst(past node, int nest)
-// {
-// 	if(node == NULL)
-// 		return;
+past BlockItem() { //非空
+	past ret = Stmt();
+	return ret;
+}
 
-// 	int i = 0;
-// 	for(i = 0; i < nest; i ++)
-// 		printf("  ");
-// 	if(strcmp(node->nodeType, "intValue") == 0)
-// 		printf("%s %d\n", node->nodeType, node->ivalue);
-// 	else if(strcmp(node->nodeType, "expr") == 0)
-// 		printf("%s '%c'\n", node->nodeType, (char)node->ivalue);
-// 	showAst(node->left, nest+1);
-// 	showAst(node->right, nest+1);
+past BlockItems() { //非空
+	past ret = NewNode(NULL, COMPOUND_STMT, NULL);
+	ret->left = BlockItem();
+	
+	past p = ret->left, nxt;
+	advance();
+	while((nxt = BlockItem()) != NULL) {
+		p->next = nxt;
+		p = tail;
+	}
+	p->next = NULL;
+	return ret;
+}
 
-// }
+past Block() {
+    assert(tok == Y_LBRACKET);
+	advance();
+    past ret = BlockItems();
+	advance();
+	assert(tok == Y_RBRACKET);
+	return ret;
+}
+
+
+void showAst(past node, int nest)
+{
+	if(node == NULL)
+		return;
+
+	int i = 0;
+	for(i = 0; i < nest; i ++)
+		printf("  ");
+	printf("%d\n", node->nodeType);
+	showAst(node->left, nest+1);
+	showAst(node->right, nest+1);
+	showAst(node->next, nest);
+}
 
 int main(int argc, char **argv)
 {
-	while(1)
-	{
-		printf("input expression, 'q' to exit>");
-		advance();
-		// int r = expr();
-		// printf("result: %d\n", r);
+	freopen("test.in", "r", stdin);
+	printf("input expression: \n");
+	advance();
+	// int r = expr();
+	// printf("result: %d\n", r);
 
-		past rr = Block();
-		showAst(rr, 0);
-	}
+	past rr = Block();
+	showAst(rr, 0);
 	return 0;
 }
