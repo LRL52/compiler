@@ -23,7 +23,7 @@ struct _ast{
 };
 
 #define MAXN 1005
-int tok;
+enum yytokentype tok;
 char s[MAXN][MAXN];
 int stk[MAXN], top;
 past tail;
@@ -86,6 +86,7 @@ past BlockItems() { //非空
 	while((nxt = BlockItem()) != NULL) {
 		p->next = nxt;
 		p = tail;
+		advance();
 	}
 	p->next = NULL;
 	return ret;
@@ -100,6 +101,13 @@ past Block() {
 	return ret;
 }
 
+void print(enum yytokentype type) {
+	switch (type) {
+		case COMPOUND_STMT: printf("%s", "COMPOUND_STMT"); break;
+		case RETURN_STMT: printf("%s", "RETURN_STMT"); break;
+		default: printf("%s", "Unknown node type!"); break;
+	}
+}
 
 void showAst(past node, int nest)
 {
@@ -109,7 +117,9 @@ void showAst(past node, int nest)
 	int i = 0;
 	for(i = 0; i < nest; i ++)
 		printf("  ");
-	printf("%d\n", node->nodeType);
+	//printf("%d\n", node->nodeType);
+	print(node->nodeType);
+	puts("");
 	showAst(node->left, nest+1);
 	showAst(node->right, nest+1);
 	showAst(node->next, nest);
@@ -118,7 +128,7 @@ void showAst(past node, int nest)
 int main(int argc, char **argv)
 {
 	freopen("test.in", "r", stdin);
-	printf("input expression: \n");
+	//printf("input expression: \n");
 	advance();
 	// int r = expr();
 	// printf("result: %d\n", r);
