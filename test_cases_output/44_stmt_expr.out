@@ -1,0 +1,39 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL k
+  DECL_STMT
+    VAR_DECL n
+      INTEGER_LITERAL 10
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k
+        INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR i
+          BINARY_OPERATOR -
+            DECL_REF_EXPR n
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+          BINARY_OPERATOR +
+            DECL_REF_EXPR k
+            INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR k
+            BINARY_OPERATOR +
+              DECL_REF_EXPR k
+              DECL_REF_EXPR k
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR k
+      RETURN_STMT
+        DECL_REF_EXPR k

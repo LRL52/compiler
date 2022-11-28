@@ -1,0 +1,288 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL RADIUS
+      FLOATING_LITERAL 5.500000
+    VAR_DECL PI
+      FLOATING_LITERAL 3.141593
+    VAR_DECL EPS
+      FLOATING_LITERAL 0.000001
+  DECL_STMT
+    VAR_DECL PI_HEX
+      FLOATING_LITERAL 3.141593
+    VAR_DECL HEX2
+      FLOATING_LITERAL 0.078125
+  DECL_STMT
+    VAR_DECL FACT
+      UNARY_OPERATOR -
+        FLOATING_LITERAL 33000.000000
+    VAR_DECL EVAL1
+      BINARY_OPERATOR *
+        BINARY_OPERATOR *
+          DECL_REF_EXPR PI
+          DECL_REF_EXPR RADIUS
+        DECL_REF_EXPR RADIUS
+    VAR_DECL EVAL2
+      BINARY_OPERATOR *
+        BINARY_OPERATOR *
+          INTEGER_LITERAL 2
+          DECL_REF_EXPR PI_HEX
+        DECL_REF_EXPR RADIUS
+    VAR_DECL EVAL3
+      BINARY_OPERATOR *
+        BINARY_OPERATOR *
+          DECL_REF_EXPR PI
+          INTEGER_LITERAL 2
+        DECL_REF_EXPR RADIUS
+  DECL_STMT
+    VAR_DECL CONV1
+      INTEGER_LITERAL 233
+    VAR_DECL CONV2
+      INTEGER_LITERAL 0
+  DECL_STMT
+    VAR_DECL MAX
+      FLOATING_LITERAL 1000000000.000000
+    VAR_DECL TWO
+      FLOATING_LITERAL 2.900000
+    VAR_DECL THREE
+      FLOATING_LITERAL 3.200000
+    VAR_DECL FIVE
+      BINARY_OPERATOR +
+        DECL_REF_EXPR TWO
+        DECL_REF_EXPR THREE
+  FUNCTION_DECL float_abs
+    PARM_DECL x
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR x
+          INTEGER_LITERAL 0
+        RETURN_STMT
+          UNARY_OPERATOR -
+            DECL_REF_EXPR x
+      RETURN_STMT
+        DECL_REF_EXPR x
+  FUNCTION_DECL circle_area
+    PARM_DECL radius
+    COMPOUND_STMT
+      RETURN_STMT
+        BINARY_OPERATOR /
+          BINARY_OPERATOR +
+            BINARY_OPERATOR *
+              BINARY_OPERATOR *
+                DECL_REF_EXPR PI
+                DECL_REF_EXPR radius
+              DECL_REF_EXPR radius
+            BINARY_OPERATOR *
+              BINARY_OPERATOR *
+                DECL_REF_EXPR radius
+                DECL_REF_EXPR radius
+              DECL_REF_EXPR PI
+          INTEGER_LITERAL 2
+  FUNCTION_DECL float_eq
+    PARM_DECL a
+    PARM_DECL b
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR <
+          CALL_EXPR
+            DECL_REF_EXPR float_abs
+            BINARY_OPERATOR -
+              DECL_REF_EXPR a
+              DECL_REF_EXPR b
+          DECL_REF_EXPR EPS
+        COMPOUND_STMT
+          RETURN_STMT
+            BINARY_OPERATOR /
+              BINARY_OPERATOR *
+                INTEGER_LITERAL 1
+                FLOATING_LITERAL 2.000000
+              INTEGER_LITERAL 2
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 0
+  FUNCTION_DECL error
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 101
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 114
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 114
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 111
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 114
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+  FUNCTION_DECL ok
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 111
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 107
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+  FUNCTION_DECL assert
+    PARM_DECL cond
+    COMPOUND_STMT
+      IF_STMT
+        UNARY_OPERATOR !
+          DECL_REF_EXPR cond
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR error
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR ok
+  FUNCTION_DECL assert_not
+    PARM_DECL cond
+    COMPOUND_STMT
+      IF_STMT
+        DECL_REF_EXPR cond
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR error
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR ok
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR assert_not
+        CALL_EXPR
+          DECL_REF_EXPR float_eq
+          DECL_REF_EXPR HEX2
+          DECL_REF_EXPR FACT
+      CALL_EXPR
+        DECL_REF_EXPR assert_not
+        CALL_EXPR
+          DECL_REF_EXPR float_eq
+          DECL_REF_EXPR EVAL1
+          DECL_REF_EXPR EVAL2
+      CALL_EXPR
+        DECL_REF_EXPR assert
+        CALL_EXPR
+          DECL_REF_EXPR float_eq
+          DECL_REF_EXPR EVAL2
+          DECL_REF_EXPR EVAL3
+      CALL_EXPR
+        DECL_REF_EXPR assert
+        CALL_EXPR
+          DECL_REF_EXPR float_eq
+          CALL_EXPR
+            DECL_REF_EXPR circle_area
+            DECL_REF_EXPR RADIUS
+          CALL_EXPR
+            DECL_REF_EXPR circle_area
+            DECL_REF_EXPR FIVE
+      CALL_EXPR
+        DECL_REF_EXPR assert_not
+        CALL_EXPR
+          DECL_REF_EXPR float_eq
+          DECL_REF_EXPR CONV1
+          DECL_REF_EXPR CONV2
+      IF_STMT
+        FLOATING_LITERAL 1.500000
+        CALL_EXPR
+          DECL_REF_EXPR ok
+      IF_STMT
+        UNARY_OPERATOR !
+          UNARY_OPERATOR !
+            FLOATING_LITERAL 3.300000
+        CALL_EXPR
+          DECL_REF_EXPR ok
+      IF_STMT
+        BINARY_OPERATOR &&
+          FLOATING_LITERAL 0.000000
+          INTEGER_LITERAL 3
+        CALL_EXPR
+          DECL_REF_EXPR error
+      IF_STMT
+        BINARY_OPERATOR ||
+          INTEGER_LITERAL 0
+          FLOATING_LITERAL 0.300000
+        CALL_EXPR
+          DECL_REF_EXPR ok
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 1
+        VAR_DECL p
+          INTEGER_LITERAL 0
+      DECL_STMT
+        VAR_DECL arr
+          INIT_LIST_EXPR
+            FLOATING_LITERAL 1.000000
+            INTEGER_LITERAL 2
+      DECL_STMT
+        VAR_DECL len
+          CALL_EXPR
+            DECL_REF_EXPR getfarray
+            DECL_REF_EXPR arr
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          DECL_REF_EXPR MAX
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL input
+              CALL_EXPR
+                DECL_REF_EXPR getfloat
+          DECL_STMT
+            VAR_DECL area
+              BINARY_OPERATOR *
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR PI
+                  DECL_REF_EXPR input
+                DECL_REF_EXPR input
+            VAR_DECL area_trunc
+              CALL_EXPR
+                DECL_REF_EXPR circle_area
+                DECL_REF_EXPR input
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR arr
+              DECL_REF_EXPR p
+            BINARY_OPERATOR +
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR arr
+                DECL_REF_EXPR p
+              DECL_REF_EXPR input
+          CALL_EXPR
+            DECL_REF_EXPR putfloat
+            DECL_REF_EXPR area
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 32
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR area_trunc
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR *
+              DECL_REF_EXPR i
+              UNARY_OPERATOR -
+                UNARY_OPERATOR -
+                  FLOATING_LITERAL 10.000000
+          BINARY_OPERATOR =
+            DECL_REF_EXPR p
+            BINARY_OPERATOR +
+              DECL_REF_EXPR p
+              INTEGER_LITERAL 1
+      CALL_EXPR
+        DECL_REF_EXPR putfarray
+        DECL_REF_EXPR len
+        DECL_REF_EXPR arr
+      RETURN_STMT
+        INTEGER_LITERAL 0

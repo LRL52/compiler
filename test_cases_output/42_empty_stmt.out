@@ -1,0 +1,13 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+          INTEGER_LITERAL 10
+      NULL_STMT
+      RETURN_STMT
+        BINARY_OPERATOR +
+          BINARY_OPERATOR *
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 2
+          INTEGER_LITERAL 1

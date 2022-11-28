@@ -1,0 +1,13 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL defn
+    COMPOUND_STMT
+      RETURN_STMT
+        INTEGER_LITERAL 4
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+          CALL_EXPR
+            DECL_REF_EXPR defn
+      RETURN_STMT
+        DECL_REF_EXPR a

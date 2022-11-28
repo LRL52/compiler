@@ -1,0 +1,52 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL whileIf
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 0
+      DECL_STMT
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 100
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 5
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR b
+                INTEGER_LITERAL 25
+            IF_STMT
+              BINARY_OPERATOR ==
+                DECL_REF_EXPR a
+                INTEGER_LITERAL 10
+              COMPOUND_STMT
+                BINARY_OPERATOR =
+                  DECL_REF_EXPR b
+                  INTEGER_LITERAL 42
+              COMPOUND_STMT
+                BINARY_OPERATOR =
+                  DECL_REF_EXPR b
+                  BINARY_OPERATOR *
+                    DECL_REF_EXPR a
+                    INTEGER_LITERAL 2
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            BINARY_OPERATOR +
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR b
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      RETURN_STMT
+        CALL_EXPR
+          DECL_REF_EXPR whileIf

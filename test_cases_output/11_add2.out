@@ -1,0 +1,17 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 10
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        UNARY_OPERATOR -
+          INTEGER_LITERAL 1
+      RETURN_STMT
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b

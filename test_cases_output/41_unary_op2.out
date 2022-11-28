@@ -1,0 +1,47 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 70
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        BINARY_OPERATOR +
+          BINARY_OPERATOR -
+            DECL_REF_EXPR a
+            UNARY_OPERATOR -
+              INTEGER_LITERAL 4
+          UNARY_OPERATOR +
+            DECL_REF_EXPR b
+      IF_STMT
+        UNARY_OPERATOR +
+          UNARY_OPERATOR -
+            UNARY_OPERATOR !
+              UNARY_OPERATOR !
+                UNARY_OPERATOR !
+                  DECL_REF_EXPR a
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            UNARY_OPERATOR -
+              UNARY_OPERATOR -
+                UNARY_OPERATOR -
+                  INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            BINARY_OPERATOR +
+              INTEGER_LITERAL 0
+              UNARY_OPERATOR +
+                DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a
+      RETURN_STMT
+        INTEGER_LITERAL 0

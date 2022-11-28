@@ -2,11 +2,36 @@
 #include "token.h"
 #include <string.h>
 
-// char s[1000][1000];
-// int stk[1000], top;
+#ifdef DEBUG_SCAN
+char s[10005][105];
+int stk[10005], top;
+#endif
+
 %}
 
 WHITE_SPACE	[ \t\n\r]+
+
+NEW_LINE \n|\r
+
+COMMENT \/\*([^*]|{NEW_LINE}|(\*+([^*\/]|{NEW_LINE})))*\*+\/
+
+SINGLE_COMMENT \/\/.*
+
+UNICODE \\(u|U)[0-9a-fA-F]+
+
+IDENTIFIER ({UNICODE}|[a-zA-Z_])({UNICODE}|[a-zA-Z_0-9])*
+
+HEX (\+|\-)?0(X|x)[0-9a-fA-F]+
+OCTAL (\+|\-)?0[0-7]+
+DECIMAL (\+|\-)?[0-9]+
+
+INT {HEX}|{OCTAL}|{DECIMAL}
+INTEGER {INT}(u|U)?(l|L|(ll)|(LL))?
+
+HEX_FLOAT {HEX}(\.[0-9a-fA-F]+)?((P|p){INT})?
+DECIMAL_FLOAT {DECIMAL}(\.[0-9]+)?((E|e){INT})?
+
+FLOAT {HEX_FLOAT}|{DECIMAL_FLOAT}(f|F|l|L)?
 
 %%
 
@@ -48,15 +73,20 @@ WHITE_SPACE	[ \t\n\r]+
 "{"		{return Y_LBRACKET;}
 "}"		{return Y_RBRACKET;}
 ";"		{return Y_SEMICOLON;}
-\/\/.*{WHITE_SPACE} { /* ignore note */ }
-\/\*(\s|.)*?\*\/ { /* ignore note */ }
+\/\/.*[\n]		{ /* ignore note */ }
+"/*"(([^\*]*(\*[^\/])?)*)"*/"		{ /* ignore note */ }
 
-{WHITE_SPACE}	{ }
-[0-9]+  {return num_INT;}
-[0-9]+\.[0-9]+ {return num_FLOAT;}
-[a-zA-Z_][a-zA-Z0-9_]*	{return Y_ID;}
+{WHITE_SPACE}		{ }
+[0-9]+		{return num_INT;}
+"0"[xX][a-fA-F0-9]+		{return num_INT;}
+[0-9]+\.[0-9]* { return num_FLOAT; }
+[0-9]*\.[0-9]+ { return num_FLOAT; }
+[0-9]+[eE][-+]*[0-9]+ { return num_FLOAT; }
+[0-9]*\.[0-9]+[eE][-+]*[0-9]+ { return num_FLOAT; }
+0x[0-9]*\.[0-9a-fA-F]+[pP][+-]*[0-9]* { return num_FLOAT; }
+[a-zA-Z_][a-zA-Z0-9_]*		{return Y_ID;}
 
-.	{printf("Error: 404 Not Found\n"); return 404;}
+.	{printf("Error: 404 Not Found: %s\n", yytext); return 404;}
 
 %%
 
@@ -71,19 +101,23 @@ int yywrap()
 	return 1;
 }
 
-// int main(int argc, char **argv)
-// {
-// 	int tok;
+#ifdef DEBUG_SCAN
 
-// 	while(tok = yylex()) {
-// 		if(tok != 1) {
-// 			//printf("%d	%s\n",tok,yytext);
-// 			stk[++top] = tok;
-// 			//s[top] = yytext;
-// 			sprintf(s[top], "%s", yytext);
-// 		}
-// 	}
-// 	for(int i = 1; i <= top; ++i) {
-// 		printf("%d %s\n", stk[i], s[i]);
-// 	}
-// }
+int main(int argc, char **argv)
+{
+	int tok;
+
+	while(tok = yylex()) {
+		if(tok != 1) {
+			//printf("%d	%s\n",tok,yytext);
+			stk[++top] = tok;
+			//s[top] = yytext;
+			sprintf(s[top], "%s", yytext);
+		}
+	}
+	for(int i = 1; i <= top; ++i) {
+		printf("%d %d %s\n", i, stk[i], s[i]);
+	}
+}
+
+#endif

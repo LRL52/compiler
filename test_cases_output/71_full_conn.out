@@ -1,0 +1,2289 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL relu_reg
+    PARM_DECL a
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 0
+        RETURN_STMT
+          INTEGER_LITERAL 0
+      IF_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 0
+        RETURN_STMT
+          INTEGER_LITERAL 0
+      RETURN_STMT
+        DECL_REF_EXPR a
+  FUNCTION_DECL model
+    PARM_DECL a
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR >
+          BINARY_OPERATOR +
+            BINARY_OPERATOR +
+              BINARY_OPERATOR +
+                BINARY_OPERATOR +
+                  BINARY_OPERATOR +
+                    BINARY_OPERATOR +
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR *
+                              UNARY_OPERATOR +
+                                CALL_EXPR
+                                  DECL_REF_EXPR relu_reg
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR +
+                                                                            BINARY_OPERATOR +
+                                                                              BINARY_OPERATOR +
+                                                                                BINARY_OPERATOR +
+                                                                                  BINARY_OPERATOR *
+                                                                                    UNARY_OPERATOR +
+                                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                                          DECL_REF_EXPR a
+                                                                                          INTEGER_LITERAL 0
+                                                                                        INTEGER_LITERAL 0
+                                                                                    INTEGER_LITERAL 85
+                                                                                  BINARY_OPERATOR *
+                                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                                        DECL_REF_EXPR a
+                                                                                        INTEGER_LITERAL 0
+                                                                                      INTEGER_LITERAL 1
+                                                                                    INTEGER_LITERAL 23
+                                                                                BINARY_OPERATOR *
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                                      DECL_REF_EXPR a
+                                                                                      INTEGER_LITERAL 0
+                                                                                    INTEGER_LITERAL 2
+                                                                                  UNARY_OPERATOR -
+                                                                                    INTEGER_LITERAL 82
+                                                                              BINARY_OPERATOR *
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    DECL_REF_EXPR a
+                                                                                    INTEGER_LITERAL 0
+                                                                                  INTEGER_LITERAL 3
+                                                                                UNARY_OPERATOR -
+                                                                                  INTEGER_LITERAL 103
+                                                                            BINARY_OPERATOR *
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  DECL_REF_EXPR a
+                                                                                  INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 4
+                                                                              UNARY_OPERATOR -
+                                                                                INTEGER_LITERAL 123
+                                                                          BINARY_OPERATOR *
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 1
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 64
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 1
+                                                                            INTEGER_LITERAL 1
+                                                                          UNARY_OPERATOR -
+                                                                            INTEGER_LITERAL 120
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 1
+                                                                          INTEGER_LITERAL 2
+                                                                        INTEGER_LITERAL 50
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 1
+                                                                        INTEGER_LITERAL 3
+                                                                      UNARY_OPERATOR -
+                                                                        INTEGER_LITERAL 59
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 4
+                                                                    INTEGER_LITERAL 47
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 2
+                                                                    INTEGER_LITERAL 0
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 111
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 2
+                                                                  INTEGER_LITERAL 1
+                                                                UNARY_OPERATOR -
+                                                                  INTEGER_LITERAL 67
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 2
+                                                                INTEGER_LITERAL 2
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 106
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 2
+                                                              INTEGER_LITERAL 3
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 75
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 4
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 102
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 3
+                                                          INTEGER_LITERAL 0
+                                                        INTEGER_LITERAL 34
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 3
+                                                        INTEGER_LITERAL 1
+                                                      UNARY_OPERATOR -
+                                                        INTEGER_LITERAL 39
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 3
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 65
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 3
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 47
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 4
+                                                INTEGER_LITERAL 113
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 4
+                                                INTEGER_LITERAL 0
+                                              INTEGER_LITERAL 110
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 4
+                                              INTEGER_LITERAL 1
+                                            INTEGER_LITERAL 47
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 4
+                                            INTEGER_LITERAL 2
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 4
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 4
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 80
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 46
+                              INTEGER_LITERAL 39
+                            BINARY_OPERATOR *
+                              CALL_EXPR
+                                DECL_REF_EXPR relu_reg
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR +
+                                                                            BINARY_OPERATOR +
+                                                                              BINARY_OPERATOR +
+                                                                                BINARY_OPERATOR *
+                                                                                  UNARY_OPERATOR +
+                                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                                        DECL_REF_EXPR a
+                                                                                        INTEGER_LITERAL 0
+                                                                                      INTEGER_LITERAL 0
+                                                                                  UNARY_OPERATOR -
+                                                                                    INTEGER_LITERAL 106
+                                                                                BINARY_OPERATOR *
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                                      DECL_REF_EXPR a
+                                                                                      INTEGER_LITERAL 0
+                                                                                    INTEGER_LITERAL 1
+                                                                                  INTEGER_LITERAL 126
+                                                                              BINARY_OPERATOR *
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    DECL_REF_EXPR a
+                                                                                    INTEGER_LITERAL 0
+                                                                                  INTEGER_LITERAL 2
+                                                                                UNARY_OPERATOR -
+                                                                                  INTEGER_LITERAL 18
+                                                                            BINARY_OPERATOR *
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  DECL_REF_EXPR a
+                                                                                  INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 3
+                                                                              UNARY_OPERATOR -
+                                                                                INTEGER_LITERAL 31
+                                                                          BINARY_OPERATOR *
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 0
+                                                                              INTEGER_LITERAL 4
+                                                                            UNARY_OPERATOR -
+                                                                              INTEGER_LITERAL 8
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 1
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 47
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 1
+                                                                          INTEGER_LITERAL 1
+                                                                        UNARY_OPERATOR -
+                                                                          INTEGER_LITERAL 4
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 1
+                                                                        INTEGER_LITERAL 2
+                                                                      INTEGER_LITERAL 67
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 3
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 94
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 4
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 121
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 2
+                                                                  INTEGER_LITERAL 0
+                                                                INTEGER_LITERAL 7
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 2
+                                                                INTEGER_LITERAL 1
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 21
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 2
+                                                              INTEGER_LITERAL 2
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 60
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 3
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 43
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 4
+                                                        INTEGER_LITERAL 105
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 3
+                                                        INTEGER_LITERAL 0
+                                                      UNARY_OPERATOR -
+                                                        INTEGER_LITERAL 42
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 3
+                                                      INTEGER_LITERAL 1
+                                                    INTEGER_LITERAL 87
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 3
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 29
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 3
+                                                UNARY_OPERATOR -
+                                                  INTEGER_LITERAL 106
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 4
+                                              UNARY_OPERATOR -
+                                                INTEGER_LITERAL 31
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 4
+                                              INTEGER_LITERAL 0
+                                            UNARY_OPERATOR -
+                                              INTEGER_LITERAL 110
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 4
+                                            INTEGER_LITERAL 1
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 100
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 4
+                                          INTEGER_LITERAL 2
+                                        UNARY_OPERATOR -
+                                          INTEGER_LITERAL 22
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 3
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 75
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 4
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 125
+                              INTEGER_LITERAL 77
+                          BINARY_OPERATOR *
+                            CALL_EXPR
+                              DECL_REF_EXPR relu_reg
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR +
+                                                                            BINARY_OPERATOR +
+                                                                              BINARY_OPERATOR *
+                                                                                UNARY_OPERATOR +
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                                      DECL_REF_EXPR a
+                                                                                      INTEGER_LITERAL 0
+                                                                                    INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 26
+                                                                              BINARY_OPERATOR *
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    DECL_REF_EXPR a
+                                                                                    INTEGER_LITERAL 0
+                                                                                  INTEGER_LITERAL 1
+                                                                                INTEGER_LITERAL 76
+                                                                            BINARY_OPERATOR *
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  DECL_REF_EXPR a
+                                                                                  INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 2
+                                                                              UNARY_OPERATOR -
+                                                                                INTEGER_LITERAL 70
+                                                                          BINARY_OPERATOR *
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 0
+                                                                              INTEGER_LITERAL 3
+                                                                            INTEGER_LITERAL 29
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 4
+                                                                          UNARY_OPERATOR -
+                                                                            INTEGER_LITERAL 95
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 1
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 96
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 1
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 52
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 2
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 68
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 3
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 5
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 4
+                                                                INTEGER_LITERAL 34
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 2
+                                                                INTEGER_LITERAL 0
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 34
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 2
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 102
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 6
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 3
+                                                        UNARY_OPERATOR -
+                                                          INTEGER_LITERAL 38
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 4
+                                                      INTEGER_LITERAL 27
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 3
+                                                      INTEGER_LITERAL 0
+                                                    INTEGER_LITERAL 110
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 3
+                                                    INTEGER_LITERAL 1
+                                                  INTEGER_LITERAL 116
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 2
+                                                INTEGER_LITERAL 39
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 3
+                                              UNARY_OPERATOR -
+                                                INTEGER_LITERAL 63
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 4
+                                            UNARY_OPERATOR -
+                                              INTEGER_LITERAL 99
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 4
+                                            INTEGER_LITERAL 0
+                                          INTEGER_LITERAL 65
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 4
+                                          INTEGER_LITERAL 1
+                                        INTEGER_LITERAL 120
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 2
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 39
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 3
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 6
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 94
+                            INTEGER_LITERAL 127
+                        BINARY_OPERATOR *
+                          CALL_EXPR
+                            DECL_REF_EXPR relu_reg
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR +
+                                                                            BINARY_OPERATOR *
+                                                                              UNARY_OPERATOR +
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                                    DECL_REF_EXPR a
+                                                                                    INTEGER_LITERAL 0
+                                                                                  INTEGER_LITERAL 0
+                                                                              UNARY_OPERATOR -
+                                                                                INTEGER_LITERAL 23
+                                                                            BINARY_OPERATOR *
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  DECL_REF_EXPR a
+                                                                                  INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 1
+                                                                              UNARY_OPERATOR -
+                                                                                INTEGER_LITERAL 63
+                                                                          BINARY_OPERATOR *
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 0
+                                                                              INTEGER_LITERAL 2
+                                                                            INTEGER_LITERAL 49
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 3
+                                                                          INTEGER_LITERAL 50
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 4
+                                                                        INTEGER_LITERAL 72
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 1
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 85
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 1
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 30
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 2
+                                                                  INTEGER_LITERAL 12
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 3
+                                                                INTEGER_LITERAL 125
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 4
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 117
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 2
+                                                              INTEGER_LITERAL 0
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 65
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 1
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 67
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 125
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 3
+                                                      INTEGER_LITERAL 110
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 4
+                                                    UNARY_OPERATOR -
+                                                      INTEGER_LITERAL 31
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 3
+                                                    INTEGER_LITERAL 0
+                                                  UNARY_OPERATOR -
+                                                    INTEGER_LITERAL 123
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 1
+                                                INTEGER_LITERAL 83
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 2
+                                              INTEGER_LITERAL 122
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 11
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 4
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 23
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 4
+                                          INTEGER_LITERAL 0
+                                        UNARY_OPERATOR -
+                                          INTEGER_LITERAL 47
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 1
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 32
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 2
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 117
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 3
+                                  INTEGER_LITERAL 95
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 118
+                          UNARY_OPERATOR -
+                            INTEGER_LITERAL 106
+                      BINARY_OPERATOR *
+                        CALL_EXPR
+                          DECL_REF_EXPR relu_reg
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR *
+                                                                            UNARY_OPERATOR +
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                                  DECL_REF_EXPR a
+                                                                                  INTEGER_LITERAL 0
+                                                                                INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 8
+                                                                          BINARY_OPERATOR *
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 0
+                                                                              INTEGER_LITERAL 1
+                                                                            INTEGER_LITERAL 82
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 2
+                                                                          UNARY_OPERATOR -
+                                                                            INTEGER_LITERAL 104
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 3
+                                                                        INTEGER_LITERAL 101
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 4
+                                                                      UNARY_OPERATOR -
+                                                                        INTEGER_LITERAL 116
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 0
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 63
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 1
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 16
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 2
+                                                                UNARY_OPERATOR -
+                                                                  INTEGER_LITERAL 70
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 3
+                                                              INTEGER_LITERAL 125
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 1
+                                                              INTEGER_LITERAL 4
+                                                            INTEGER_LITERAL 75
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 0
+                                                          INTEGER_LITERAL 66
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 1
+                                                        UNARY_OPERATOR -
+                                                          INTEGER_LITERAL 96
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 2
+                                                      UNARY_OPERATOR -
+                                                        INTEGER_LITERAL 101
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 3
+                                                    UNARY_OPERATOR -
+                                                      INTEGER_LITERAL 114
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 4
+                                                  INTEGER_LITERAL 59
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 3
+                                                  INTEGER_LITERAL 0
+                                                INTEGER_LITERAL 12
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 1
+                                              INTEGER_LITERAL 5
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 2
+                                            UNARY_OPERATOR -
+                                              INTEGER_LITERAL 95
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 116
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 4
+                                        UNARY_OPERATOR -
+                                          INTEGER_LITERAL 93
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 0
+                                      INTEGER_LITERAL 15
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 1
+                                    INTEGER_LITERAL 79
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 2
+                                  INTEGER_LITERAL 3
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 3
+                                INTEGER_LITERAL 49
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 4
+                              UNARY_OPERATOR -
+                                INTEGER_LITERAL 124
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 3
+                    BINARY_OPERATOR *
+                      CALL_EXPR
+                        DECL_REF_EXPR relu_reg
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR *
+                                                                          UNARY_OPERATOR +
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                                DECL_REF_EXPR a
+                                                                                INTEGER_LITERAL 0
+                                                                              INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 81
+                                                                        BINARY_OPERATOR *
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 1
+                                                                          INTEGER_LITERAL 68
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 2
+                                                                        UNARY_OPERATOR -
+                                                                          INTEGER_LITERAL 102
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 3
+                                                                      UNARY_OPERATOR -
+                                                                        INTEGER_LITERAL 74
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 4
+                                                                    INTEGER_LITERAL 121
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 0
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 15
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 55
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 2
+                                                              INTEGER_LITERAL 101
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 1
+                                                              INTEGER_LITERAL 3
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 13
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 4
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 62
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 2
+                                                          INTEGER_LITERAL 0
+                                                        INTEGER_LITERAL 64
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 1
+                                                      INTEGER_LITERAL 114
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 38
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 3
+                                                  UNARY_OPERATOR -
+                                                    INTEGER_LITERAL 21
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 4
+                                                INTEGER_LITERAL 112
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 0
+                                              INTEGER_LITERAL 114
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 1
+                                            INTEGER_LITERAL 112
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 2
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 10
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 3
+                                        UNARY_OPERATOR -
+                                          INTEGER_LITERAL 16
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 4
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 50
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 4
+                                      INTEGER_LITERAL 0
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 112
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 1
+                                  UNARY_OPERATOR -
+                                    INTEGER_LITERAL 116
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 2
+                                UNARY_OPERATOR -
+                                  INTEGER_LITERAL 54
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 3
+                              INTEGER_LITERAL 82
+                          BINARY_OPERATOR *
+                            ARRAY_SUBSCRIPT_EXPR
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR a
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 4
+                            UNARY_OPERATOR -
+                              INTEGER_LITERAL 72
+                      INTEGER_LITERAL 32
+                  BINARY_OPERATOR *
+                    CALL_EXPR
+                      DECL_REF_EXPR relu_reg
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR +
+                                                                      BINARY_OPERATOR *
+                                                                        UNARY_OPERATOR +
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            ARRAY_SUBSCRIPT_EXPR
+                                                                              DECL_REF_EXPR a
+                                                                              INTEGER_LITERAL 0
+                                                                            INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 15
+                                                                      BINARY_OPERATOR *
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 1
+                                                                        UNARY_OPERATOR -
+                                                                          INTEGER_LITERAL 77
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 2
+                                                                      INTEGER_LITERAL 66
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 3
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 90
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 0
+                                                                    INTEGER_LITERAL 4
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 6
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 0
+                                                                UNARY_OPERATOR -
+                                                                  INTEGER_LITERAL 30
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 1
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 8
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 1
+                                                              INTEGER_LITERAL 2
+                                                            INTEGER_LITERAL 81
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 3
+                                                          INTEGER_LITERAL 2
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 1
+                                                          INTEGER_LITERAL 4
+                                                        UNARY_OPERATOR -
+                                                          INTEGER_LITERAL 110
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 0
+                                                      UNARY_OPERATOR -
+                                                        INTEGER_LITERAL 95
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 1
+                                                    INTEGER_LITERAL 59
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 52
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 3
+                                                INTEGER_LITERAL 15
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 2
+                                                INTEGER_LITERAL 4
+                                              INTEGER_LITERAL 55
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 0
+                                            UNARY_OPERATOR -
+                                              INTEGER_LITERAL 33
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 1
+                                          INTEGER_LITERAL 14
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 2
+                                        INTEGER_LITERAL 58
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 3
+                                      INTEGER_LITERAL 67
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 3
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 86
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 4
+                                    INTEGER_LITERAL 0
+                                  UNARY_OPERATOR -
+                                    INTEGER_LITERAL 79
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 1
+                                INTEGER_LITERAL 48
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 2
+                              UNARY_OPERATOR -
+                                INTEGER_LITERAL 13
+                          BINARY_OPERATOR *
+                            ARRAY_SUBSCRIPT_EXPR
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR a
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 3
+                            UNARY_OPERATOR -
+                              INTEGER_LITERAL 15
+                        BINARY_OPERATOR *
+                          ARRAY_SUBSCRIPT_EXPR
+                            ARRAY_SUBSCRIPT_EXPR
+                              DECL_REF_EXPR a
+                              INTEGER_LITERAL 4
+                            INTEGER_LITERAL 4
+                          INTEGER_LITERAL 66
+                    UNARY_OPERATOR -
+                      INTEGER_LITERAL 95
+                BINARY_OPERATOR *
+                  CALL_EXPR
+                    DECL_REF_EXPR relu_reg
+                    BINARY_OPERATOR +
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR *
+                                                                      UNARY_OPERATOR +
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          ARRAY_SUBSCRIPT_EXPR
+                                                                            DECL_REF_EXPR a
+                                                                            INTEGER_LITERAL 0
+                                                                          INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 33
+                                                                    BINARY_OPERATOR *
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 1
+                                                                      INTEGER_LITERAL 82
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 2
+                                                                    INTEGER_LITERAL 67
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 0
+                                                                    INTEGER_LITERAL 3
+                                                                  INTEGER_LITERAL 30
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 0
+                                                                  INTEGER_LITERAL 4
+                                                                UNARY_OPERATOR -
+                                                                  INTEGER_LITERAL 2
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 1
+                                                                INTEGER_LITERAL 0
+                                                              INTEGER_LITERAL 65
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 1
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 120
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 2
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 13
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 1
+                                                          INTEGER_LITERAL 3
+                                                        INTEGER_LITERAL 18
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 1
+                                                        INTEGER_LITERAL 4
+                                                      INTEGER_LITERAL 5
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 0
+                                                    INTEGER_LITERAL 104
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 1
+                                                  UNARY_OPERATOR -
+                                                    INTEGER_LITERAL 119
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 2
+                                                UNARY_OPERATOR -
+                                                  INTEGER_LITERAL 7
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 2
+                                                INTEGER_LITERAL 3
+                                              INTEGER_LITERAL 71
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 2
+                                              INTEGER_LITERAL 4
+                                            INTEGER_LITERAL 107
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 0
+                                          INTEGER_LITERAL 24
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 1
+                                        INTEGER_LITERAL 82
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 2
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 96
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 3
+                                      INTEGER_LITERAL 3
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 104
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 3
+                                    INTEGER_LITERAL 4
+                                  UNARY_OPERATOR -
+                                    INTEGER_LITERAL 121
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 4
+                                  INTEGER_LITERAL 0
+                                INTEGER_LITERAL 65
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 1
+                              INTEGER_LITERAL 97
+                          BINARY_OPERATOR *
+                            ARRAY_SUBSCRIPT_EXPR
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR a
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 2
+                            INTEGER_LITERAL 83
+                        BINARY_OPERATOR *
+                          ARRAY_SUBSCRIPT_EXPR
+                            ARRAY_SUBSCRIPT_EXPR
+                              DECL_REF_EXPR a
+                              INTEGER_LITERAL 4
+                            INTEGER_LITERAL 3
+                          INTEGER_LITERAL 46
+                      BINARY_OPERATOR *
+                        ARRAY_SUBSCRIPT_EXPR
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR a
+                            INTEGER_LITERAL 4
+                          INTEGER_LITERAL 4
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 84
+                  UNARY_OPERATOR -
+                    INTEGER_LITERAL 50
+              BINARY_OPERATOR *
+                CALL_EXPR
+                  DECL_REF_EXPR relu_reg
+                  BINARY_OPERATOR +
+                    BINARY_OPERATOR +
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR +
+                                                                  BINARY_OPERATOR *
+                                                                    UNARY_OPERATOR +
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        ARRAY_SUBSCRIPT_EXPR
+                                                                          DECL_REF_EXPR a
+                                                                          INTEGER_LITERAL 0
+                                                                        INTEGER_LITERAL 0
+                                                                    UNARY_OPERATOR -
+                                                                      INTEGER_LITERAL 29
+                                                                  BINARY_OPERATOR *
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 1
+                                                                    INTEGER_LITERAL 7
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 0
+                                                                    INTEGER_LITERAL 2
+                                                                  UNARY_OPERATOR -
+                                                                    INTEGER_LITERAL 70
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 0
+                                                                  INTEGER_LITERAL 3
+                                                                INTEGER_LITERAL 38
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 0
+                                                                INTEGER_LITERAL 4
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 90
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 1
+                                                              INTEGER_LITERAL 0
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 15
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 1
+                                                          UNARY_OPERATOR -
+                                                            INTEGER_LITERAL 32
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 1
+                                                          INTEGER_LITERAL 2
+                                                        INTEGER_LITERAL 37
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 1
+                                                        INTEGER_LITERAL 3
+                                                      INTEGER_LITERAL 36
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 1
+                                                      INTEGER_LITERAL 4
+                                                    UNARY_OPERATOR -
+                                                      INTEGER_LITERAL 62
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 2
+                                                    INTEGER_LITERAL 0
+                                                  UNARY_OPERATOR -
+                                                    INTEGER_LITERAL 125
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 1
+                                                UNARY_OPERATOR -
+                                                  INTEGER_LITERAL 46
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 2
+                                                INTEGER_LITERAL 2
+                                              UNARY_OPERATOR -
+                                                INTEGER_LITERAL 70
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 2
+                                              INTEGER_LITERAL 3
+                                            INTEGER_LITERAL 37
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 2
+                                            INTEGER_LITERAL 4
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 73
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 3
+                                          INTEGER_LITERAL 0
+                                        UNARY_OPERATOR -
+                                          INTEGER_LITERAL 34
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 1
+                                      UNARY_OPERATOR -
+                                        INTEGER_LITERAL 87
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 3
+                                      INTEGER_LITERAL 2
+                                    UNARY_OPERATOR -
+                                      INTEGER_LITERAL 75
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 3
+                                    INTEGER_LITERAL 3
+                                  INTEGER_LITERAL 71
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 3
+                                  INTEGER_LITERAL 4
+                                UNARY_OPERATOR -
+                                  INTEGER_LITERAL 77
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 4
+                                INTEGER_LITERAL 0
+                              INTEGER_LITERAL 53
+                          BINARY_OPERATOR *
+                            ARRAY_SUBSCRIPT_EXPR
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR a
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 1
+                            INTEGER_LITERAL 37
+                        BINARY_OPERATOR *
+                          ARRAY_SUBSCRIPT_EXPR
+                            ARRAY_SUBSCRIPT_EXPR
+                              DECL_REF_EXPR a
+                              INTEGER_LITERAL 4
+                            INTEGER_LITERAL 2
+                          UNARY_OPERATOR -
+                            INTEGER_LITERAL 103
+                      BINARY_OPERATOR *
+                        ARRAY_SUBSCRIPT_EXPR
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR a
+                            INTEGER_LITERAL 4
+                          INTEGER_LITERAL 3
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 13
+                    BINARY_OPERATOR *
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR a
+                          INTEGER_LITERAL 4
+                        INTEGER_LITERAL 4
+                      UNARY_OPERATOR -
+                        INTEGER_LITERAL 114
+                UNARY_OPERATOR -
+                  INTEGER_LITERAL 23
+            BINARY_OPERATOR *
+              CALL_EXPR
+                DECL_REF_EXPR relu_reg
+                BINARY_OPERATOR +
+                  BINARY_OPERATOR +
+                    BINARY_OPERATOR +
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR +
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR +
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR +
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR +
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR +
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR +
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR +
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR +
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR +
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR *
+                                                                  UNARY_OPERATOR +
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      ARRAY_SUBSCRIPT_EXPR
+                                                                        DECL_REF_EXPR a
+                                                                        INTEGER_LITERAL 0
+                                                                      INTEGER_LITERAL 0
+                                                                  INTEGER_LITERAL 67
+                                                                BINARY_OPERATOR *
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    ARRAY_SUBSCRIPT_EXPR
+                                                                      DECL_REF_EXPR a
+                                                                      INTEGER_LITERAL 0
+                                                                    INTEGER_LITERAL 1
+                                                                  INTEGER_LITERAL 42
+                                                              BINARY_OPERATOR *
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  ARRAY_SUBSCRIPT_EXPR
+                                                                    DECL_REF_EXPR a
+                                                                    INTEGER_LITERAL 0
+                                                                  INTEGER_LITERAL 2
+                                                                INTEGER_LITERAL 41
+                                                            BINARY_OPERATOR *
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                ARRAY_SUBSCRIPT_EXPR
+                                                                  DECL_REF_EXPR a
+                                                                  INTEGER_LITERAL 0
+                                                                INTEGER_LITERAL 3
+                                                              UNARY_OPERATOR -
+                                                                INTEGER_LITERAL 123
+                                                          BINARY_OPERATOR *
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              ARRAY_SUBSCRIPT_EXPR
+                                                                DECL_REF_EXPR a
+                                                                INTEGER_LITERAL 0
+                                                              INTEGER_LITERAL 4
+                                                            UNARY_OPERATOR -
+                                                              INTEGER_LITERAL 92
+                                                        BINARY_OPERATOR *
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            ARRAY_SUBSCRIPT_EXPR
+                                                              DECL_REF_EXPR a
+                                                              INTEGER_LITERAL 1
+                                                            INTEGER_LITERAL 0
+                                                          INTEGER_LITERAL 10
+                                                      BINARY_OPERATOR *
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          ARRAY_SUBSCRIPT_EXPR
+                                                            DECL_REF_EXPR a
+                                                            INTEGER_LITERAL 1
+                                                          INTEGER_LITERAL 1
+                                                        UNARY_OPERATOR -
+                                                          INTEGER_LITERAL 77
+                                                    BINARY_OPERATOR *
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        ARRAY_SUBSCRIPT_EXPR
+                                                          DECL_REF_EXPR a
+                                                          INTEGER_LITERAL 1
+                                                        INTEGER_LITERAL 2
+                                                      INTEGER_LITERAL 75
+                                                  BINARY_OPERATOR *
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      ARRAY_SUBSCRIPT_EXPR
+                                                        DECL_REF_EXPR a
+                                                        INTEGER_LITERAL 1
+                                                      INTEGER_LITERAL 3
+                                                    INTEGER_LITERAL 96
+                                                BINARY_OPERATOR *
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    ARRAY_SUBSCRIPT_EXPR
+                                                      DECL_REF_EXPR a
+                                                      INTEGER_LITERAL 1
+                                                    INTEGER_LITERAL 4
+                                                  UNARY_OPERATOR -
+                                                    INTEGER_LITERAL 51
+                                              BINARY_OPERATOR *
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  ARRAY_SUBSCRIPT_EXPR
+                                                    DECL_REF_EXPR a
+                                                    INTEGER_LITERAL 2
+                                                  INTEGER_LITERAL 0
+                                                INTEGER_LITERAL 109
+                                            BINARY_OPERATOR *
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                ARRAY_SUBSCRIPT_EXPR
+                                                  DECL_REF_EXPR a
+                                                  INTEGER_LITERAL 2
+                                                INTEGER_LITERAL 1
+                                              UNARY_OPERATOR -
+                                                INTEGER_LITERAL 74
+                                          BINARY_OPERATOR *
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              ARRAY_SUBSCRIPT_EXPR
+                                                DECL_REF_EXPR a
+                                                INTEGER_LITERAL 2
+                                              INTEGER_LITERAL 2
+                                            UNARY_OPERATOR -
+                                              INTEGER_LITERAL 7
+                                        BINARY_OPERATOR *
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            ARRAY_SUBSCRIPT_EXPR
+                                              DECL_REF_EXPR a
+                                              INTEGER_LITERAL 2
+                                            INTEGER_LITERAL 3
+                                          UNARY_OPERATOR -
+                                            INTEGER_LITERAL 122
+                                      BINARY_OPERATOR *
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          ARRAY_SUBSCRIPT_EXPR
+                                            DECL_REF_EXPR a
+                                            INTEGER_LITERAL 2
+                                          INTEGER_LITERAL 4
+                                        INTEGER_LITERAL 67
+                                    BINARY_OPERATOR *
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        ARRAY_SUBSCRIPT_EXPR
+                                          DECL_REF_EXPR a
+                                          INTEGER_LITERAL 3
+                                        INTEGER_LITERAL 0
+                                      INTEGER_LITERAL 47
+                                  BINARY_OPERATOR *
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      ARRAY_SUBSCRIPT_EXPR
+                                        DECL_REF_EXPR a
+                                        INTEGER_LITERAL 3
+                                      INTEGER_LITERAL 1
+                                    INTEGER_LITERAL 22
+                                BINARY_OPERATOR *
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    ARRAY_SUBSCRIPT_EXPR
+                                      DECL_REF_EXPR a
+                                      INTEGER_LITERAL 3
+                                    INTEGER_LITERAL 2
+                                  UNARY_OPERATOR -
+                                    INTEGER_LITERAL 68
+                              BINARY_OPERATOR *
+                                ARRAY_SUBSCRIPT_EXPR
+                                  ARRAY_SUBSCRIPT_EXPR
+                                    DECL_REF_EXPR a
+                                    INTEGER_LITERAL 3
+                                  INTEGER_LITERAL 3
+                                INTEGER_LITERAL 38
+                            BINARY_OPERATOR *
+                              ARRAY_SUBSCRIPT_EXPR
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR a
+                                  INTEGER_LITERAL 3
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 29
+                          BINARY_OPERATOR *
+                            ARRAY_SUBSCRIPT_EXPR
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR a
+                                INTEGER_LITERAL 4
+                              INTEGER_LITERAL 0
+                            INTEGER_LITERAL 115
+                        BINARY_OPERATOR *
+                          ARRAY_SUBSCRIPT_EXPR
+                            ARRAY_SUBSCRIPT_EXPR
+                              DECL_REF_EXPR a
+                              INTEGER_LITERAL 4
+                            INTEGER_LITERAL 1
+                          UNARY_OPERATOR -
+                            INTEGER_LITERAL 121
+                      BINARY_OPERATOR *
+                        ARRAY_SUBSCRIPT_EXPR
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR a
+                            INTEGER_LITERAL 4
+                          INTEGER_LITERAL 2
+                        INTEGER_LITERAL 36
+                    BINARY_OPERATOR *
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR a
+                          INTEGER_LITERAL 4
+                        INTEGER_LITERAL 3
+                      UNARY_OPERATOR -
+                        INTEGER_LITERAL 49
+                  BINARY_OPERATOR *
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR a
+                        INTEGER_LITERAL 4
+                      INTEGER_LITERAL 4
+                    INTEGER_LITERAL 85
+              INTEGER_LITERAL 46
+          INTEGER_LITERAL 0
+        RETURN_STMT
+          INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL N
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      DECL_STMT
+        VAR_DECL a
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR N
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL i
+              INTEGER_LITERAL 0
+          WHILE_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 5
+            COMPOUND_STMT
+              DECL_STMT
+                VAR_DECL j
+                  INTEGER_LITERAL 0
+              WHILE_STMT
+                BINARY_OPERATOR <
+                  DECL_REF_EXPR j
+                  INTEGER_LITERAL 5
+                COMPOUND_STMT
+                  BINARY_OPERATOR =
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR a
+                        DECL_REF_EXPR i
+                      DECL_REF_EXPR j
+                    CALL_EXPR
+                      DECL_REF_EXPR getint
+                  BINARY_OPERATOR =
+                    DECL_REF_EXPR j
+                    BINARY_OPERATOR +
+                      DECL_REF_EXPR j
+                      INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                DECL_REF_EXPR i
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+          IF_STMT
+            CALL_EXPR
+              DECL_REF_EXPR model
+              DECL_REF_EXPR a
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 99
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 97
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 116
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 100
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 111
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 103
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR N
+            BINARY_OPERATOR -
+              DECL_REF_EXPR N
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0

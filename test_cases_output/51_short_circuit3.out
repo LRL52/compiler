@@ -1,0 +1,277 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+    VAR_DECL b
+    VAR_DECL d
+  FUNCTION_DECL set_a
+    PARM_DECL val
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        DECL_REF_EXPR val
+      RETURN_STMT
+        DECL_REF_EXPR a
+  FUNCTION_DECL set_b
+    PARM_DECL val
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        DECL_REF_EXPR val
+      RETURN_STMT
+        DECL_REF_EXPR b
+  FUNCTION_DECL set_d
+    PARM_DECL val
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d
+        DECL_REF_EXPR val
+      RETURN_STMT
+        DECL_REF_EXPR d
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 3
+      IF_STMT
+        BINARY_OPERATOR &&
+          CALL_EXPR
+            DECL_REF_EXPR set_a
+            INTEGER_LITERAL 0
+          CALL_EXPR
+            DECL_REF_EXPR set_b
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 3
+      IF_STMT
+        BINARY_OPERATOR &&
+          CALL_EXPR
+            DECL_REF_EXPR set_a
+            INTEGER_LITERAL 0
+          CALL_EXPR
+            DECL_REF_EXPR set_b
+            INTEGER_LITERAL 1
+        NULL_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      DECL_STMT
+        VAR_DECL c
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d
+        INTEGER_LITERAL 2
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR >=
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 1
+          CALL_EXPR
+            DECL_REF_EXPR set_d
+            INTEGER_LITERAL 3
+        NULL_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR d
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR <=
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 1
+          CALL_EXPR
+            DECL_REF_EXPR set_d
+            INTEGER_LITERAL 4
+        COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR d
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      IF_STMT
+        BINARY_OPERATOR >=
+          INTEGER_LITERAL 16
+          BINARY_OPERATOR -
+            INTEGER_LITERAL 3
+            BINARY_OPERATOR +
+              INTEGER_LITERAL 2
+              INTEGER_LITERAL 1
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 65
+      IF_STMT
+        BINARY_OPERATOR !=
+          BINARY_OPERATOR -
+            INTEGER_LITERAL 25
+            INTEGER_LITERAL 7
+          BINARY_OPERATOR -
+            INTEGER_LITERAL 36
+            BINARY_OPERATOR *
+              INTEGER_LITERAL 6
+              INTEGER_LITERAL 3
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 66
+      IF_STMT
+        BINARY_OPERATOR !=
+          BINARY_OPERATOR <
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 8
+          BINARY_OPERATOR %
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 2
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 67
+      IF_STMT
+        BINARY_OPERATOR ==
+          BINARY_OPERATOR >
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 4
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 68
+      IF_STMT
+        BINARY_OPERATOR ==
+          INTEGER_LITERAL 1
+          BINARY_OPERATOR <=
+            INTEGER_LITERAL 0
+            INTEGER_LITERAL 77
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 69
+      IF_STMT
+        BINARY_OPERATOR ==
+          BINARY_OPERATOR -
+            INTEGER_LITERAL 5
+            INTEGER_LITERAL 6
+          UNARY_OPERATOR -
+            UNARY_OPERATOR !
+              INTEGER_LITERAL 0
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 70
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      DECL_STMT
+        VAR_DECL i0
+          INTEGER_LITERAL 0
+        VAR_DECL i1
+          INTEGER_LITERAL 1
+        VAR_DECL i2
+          INTEGER_LITERAL 2
+        VAR_DECL i3
+          INTEGER_LITERAL 3
+        VAR_DECL i4
+          INTEGER_LITERAL 4
+      WHILE_STMT
+        BINARY_OPERATOR &&
+          DECL_REF_EXPR i0
+          DECL_REF_EXPR i1
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 32
+      IF_STMT
+        BINARY_OPERATOR ||
+          DECL_REF_EXPR i0
+          DECL_REF_EXPR i1
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 67
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR >=
+            DECL_REF_EXPR i0
+            DECL_REF_EXPR i1
+          BINARY_OPERATOR <=
+            DECL_REF_EXPR i1
+            DECL_REF_EXPR i0
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 72
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR >=
+            DECL_REF_EXPR i2
+            DECL_REF_EXPR i1
+          BINARY_OPERATOR !=
+            DECL_REF_EXPR i4
+            DECL_REF_EXPR i3
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 73
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR &&
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR i0
+              UNARY_OPERATOR !
+                DECL_REF_EXPR i1
+            BINARY_OPERATOR <
+              DECL_REF_EXPR i3
+              DECL_REF_EXPR i3
+          BINARY_OPERATOR >=
+            DECL_REF_EXPR i4
+            DECL_REF_EXPR i4
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 74
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR i0
+            UNARY_OPERATOR !
+              DECL_REF_EXPR i1
+          BINARY_OPERATOR &&
+            BINARY_OPERATOR <
+              DECL_REF_EXPR i3
+              DECL_REF_EXPR i3
+            BINARY_OPERATOR >=
+              DECL_REF_EXPR i4
+              DECL_REF_EXPR i4
+        CALL_EXPR
+          DECL_REF_EXPR putch
+          INTEGER_LITERAL 75
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        INTEGER_LITERAL 0

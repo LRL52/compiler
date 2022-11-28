@@ -1,0 +1,170 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL ans
+    VAR_DECL sum
+      INTEGER_LITERAL 0
+    VAR_DECL n
+  DECL_STMT
+    VAR_DECL row
+    VAR_DECL line1
+    VAR_DECL line2
+  FUNCTION_DECL printans
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR sum
+        BINARY_OPERATOR +
+          DECL_REF_EXPR sum
+          INTEGER_LITERAL 1
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR i
+          DECL_REF_EXPR n
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR ans
+              DECL_REF_EXPR i
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR i
+              DECL_REF_EXPR n
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+              RETURN_STMT
+            CALL_EXPR
+              DECL_REF_EXPR putch
+              INTEGER_LITERAL 32
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+  FUNCTION_DECL f
+    PARM_DECL step
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR i
+          DECL_REF_EXPR n
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR &&
+              BINARY_OPERATOR &&
+                BINARY_OPERATOR !=
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR row
+                    DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+                BINARY_OPERATOR ==
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR line1
+                    BINARY_OPERATOR +
+                      DECL_REF_EXPR step
+                      DECL_REF_EXPR i
+                  INTEGER_LITERAL 0
+              UNARY_OPERATOR !
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR line2
+                  BINARY_OPERATOR -
+                    BINARY_OPERATOR +
+                      DECL_REF_EXPR n
+                      DECL_REF_EXPR step
+                    DECL_REF_EXPR i
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR ans
+                  DECL_REF_EXPR step
+                DECL_REF_EXPR i
+              IF_STMT
+                BINARY_OPERATOR ==
+                  DECL_REF_EXPR step
+                  DECL_REF_EXPR n
+                CALL_EXPR
+                  DECL_REF_EXPR printans
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR row
+                  DECL_REF_EXPR i
+                INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR line1
+                  BINARY_OPERATOR +
+                    DECL_REF_EXPR step
+                    DECL_REF_EXPR i
+                INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR line2
+                  BINARY_OPERATOR -
+                    BINARY_OPERATOR +
+                      DECL_REF_EXPR n
+                      DECL_REF_EXPR step
+                    DECL_REF_EXPR i
+                INTEGER_LITERAL 1
+              CALL_EXPR
+                DECL_REF_EXPR f
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR step
+                  INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR row
+                  DECL_REF_EXPR i
+                INTEGER_LITERAL 0
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR line1
+                  BINARY_OPERATOR +
+                    DECL_REF_EXPR step
+                    DECL_REF_EXPR i
+                INTEGER_LITERAL 0
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR line2
+                  BINARY_OPERATOR -
+                    BINARY_OPERATOR +
+                      DECL_REF_EXPR n
+                      DECL_REF_EXPR step
+                    DECL_REF_EXPR i
+                INTEGER_LITERAL 0
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL N
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR N
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR n
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          CALL_EXPR
+            DECL_REF_EXPR f
+            INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR N
+            BINARY_OPERATOR -
+              DECL_REF_EXPR N
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR sum

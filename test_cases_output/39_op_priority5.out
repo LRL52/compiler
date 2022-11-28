@@ -1,0 +1,64 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+      INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL b
+      INTEGER_LITERAL 0
+  DECL_STMT
+    VAR_DECL c
+      INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL d
+      INTEGER_LITERAL 2
+  DECL_STMT
+    VAR_DECL e
+      INTEGER_LITERAL 4
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL flag
+          INTEGER_LITERAL 0
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR &&
+            BINARY_OPERATOR ==
+              BINARY_OPERATOR /
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR a
+                  DECL_REF_EXPR b
+                DECL_REF_EXPR c
+              BINARY_OPERATOR +
+                DECL_REF_EXPR e
+                DECL_REF_EXPR d
+            BINARY_OPERATOR <=
+              BINARY_OPERATOR +
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR a
+                  BINARY_OPERATOR +
+                    DECL_REF_EXPR a
+                    DECL_REF_EXPR b
+                DECL_REF_EXPR c
+              BINARY_OPERATOR +
+                DECL_REF_EXPR d
+                DECL_REF_EXPR e
+          BINARY_OPERATOR ==
+            BINARY_OPERATOR -
+              DECL_REF_EXPR a
+              BINARY_OPERATOR *
+                DECL_REF_EXPR b
+                DECL_REF_EXPR c
+            BINARY_OPERATOR -
+              DECL_REF_EXPR d
+              BINARY_OPERATOR /
+                DECL_REF_EXPR a
+                DECL_REF_EXPR c
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR flag
+            INTEGER_LITERAL 1
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR flag
+      RETURN_STMT
+        DECL_REF_EXPR flag

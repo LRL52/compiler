@@ -1,0 +1,845 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a1
+      INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL a2
+      INTEGER_LITERAL 2
+  DECL_STMT
+    VAR_DECL a3
+      INTEGER_LITERAL 3
+  DECL_STMT
+    VAR_DECL a4
+      INTEGER_LITERAL 4
+  DECL_STMT
+    VAR_DECL a5
+      INTEGER_LITERAL 5
+  DECL_STMT
+    VAR_DECL a6
+      INTEGER_LITERAL 6
+  DECL_STMT
+    VAR_DECL a7
+      INTEGER_LITERAL 7
+  DECL_STMT
+    VAR_DECL a8
+      INTEGER_LITERAL 8
+  DECL_STMT
+    VAR_DECL a9
+      INTEGER_LITERAL 9
+  DECL_STMT
+    VAR_DECL a10
+      INTEGER_LITERAL 10
+  DECL_STMT
+    VAR_DECL a11
+      INTEGER_LITERAL 11
+  DECL_STMT
+    VAR_DECL a12
+      INTEGER_LITERAL 12
+  DECL_STMT
+    VAR_DECL a13
+      INTEGER_LITERAL 13
+  DECL_STMT
+    VAR_DECL a14
+      INTEGER_LITERAL 14
+  DECL_STMT
+    VAR_DECL a15
+      INTEGER_LITERAL 15
+  DECL_STMT
+    VAR_DECL a16
+      INTEGER_LITERAL 16
+  DECL_STMT
+    VAR_DECL a17
+      INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL a18
+      INTEGER_LITERAL 2
+  DECL_STMT
+    VAR_DECL a19
+      INTEGER_LITERAL 3
+  DECL_STMT
+    VAR_DECL a20
+      INTEGER_LITERAL 4
+  DECL_STMT
+    VAR_DECL a21
+      INTEGER_LITERAL 5
+  DECL_STMT
+    VAR_DECL a22
+      INTEGER_LITERAL 6
+  DECL_STMT
+    VAR_DECL a23
+      INTEGER_LITERAL 7
+  DECL_STMT
+    VAR_DECL a24
+      INTEGER_LITERAL 8
+  DECL_STMT
+    VAR_DECL a25
+      INTEGER_LITERAL 9
+  DECL_STMT
+    VAR_DECL a26
+      INTEGER_LITERAL 10
+  DECL_STMT
+    VAR_DECL a27
+      INTEGER_LITERAL 11
+  DECL_STMT
+    VAR_DECL a28
+      INTEGER_LITERAL 12
+  DECL_STMT
+    VAR_DECL a29
+      INTEGER_LITERAL 13
+  DECL_STMT
+    VAR_DECL a30
+      INTEGER_LITERAL 14
+  DECL_STMT
+    VAR_DECL a31
+      INTEGER_LITERAL 15
+  DECL_STMT
+    VAR_DECL a32
+      INTEGER_LITERAL 16
+  FUNCTION_DECL func
+    PARM_DECL a
+    PARM_DECL b
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b
+      DECL_STMT
+        VAR_DECL c1
+      DECL_STMT
+        VAR_DECL c2
+      DECL_STMT
+        VAR_DECL c3
+      DECL_STMT
+        VAR_DECL c4
+      DECL_STMT
+        VAR_DECL d1
+      DECL_STMT
+        VAR_DECL d2
+      DECL_STMT
+        VAR_DECL d3
+      DECL_STMT
+        VAR_DECL d4
+      DECL_STMT
+        VAR_DECL e1
+      DECL_STMT
+        VAR_DECL e2
+      DECL_STMT
+        VAR_DECL e3
+      DECL_STMT
+        VAR_DECL e4
+      DECL_STMT
+        VAR_DECL f1
+      DECL_STMT
+        VAR_DECL f2
+      DECL_STMT
+        VAR_DECL f3
+      DECL_STMT
+        VAR_DECL f4
+      DECL_STMT
+        VAR_DECL g1
+      DECL_STMT
+        VAR_DECL g2
+      DECL_STMT
+        VAR_DECL g3
+      DECL_STMT
+        VAR_DECL g4
+      DECL_STMT
+        VAR_DECL h1
+      DECL_STMT
+        VAR_DECL h2
+      DECL_STMT
+        VAR_DECL h3
+      DECL_STMT
+        VAR_DECL h4
+      DECL_STMT
+        VAR_DECL i1
+      DECL_STMT
+        VAR_DECL i2
+      DECL_STMT
+        VAR_DECL i3
+      DECL_STMT
+        VAR_DECL i4
+      DECL_STMT
+        VAR_DECL j1
+      DECL_STMT
+        VAR_DECL j2
+      DECL_STMT
+        VAR_DECL j3
+      DECL_STMT
+        VAR_DECL j4
+      DECL_STMT
+        VAR_DECL k1
+      DECL_STMT
+        VAR_DECL k2
+      DECL_STMT
+        VAR_DECL k3
+      DECL_STMT
+        VAR_DECL k4
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c1
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c2
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c3
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c4
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR c1
+          DECL_REF_EXPR a1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR c2
+          DECL_REF_EXPR a2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR c3
+          DECL_REF_EXPR a3
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR c4
+          DECL_REF_EXPR a4
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR d1
+          DECL_REF_EXPR a5
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR d2
+          DECL_REF_EXPR a6
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR d3
+          DECL_REF_EXPR a7
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR d4
+          DECL_REF_EXPR a8
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR e1
+          DECL_REF_EXPR a9
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR e2
+          DECL_REF_EXPR a10
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR e3
+          DECL_REF_EXPR a11
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR e4
+          DECL_REF_EXPR a12
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR f1
+          DECL_REF_EXPR a13
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR f2
+          DECL_REF_EXPR a14
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR f3
+          DECL_REF_EXPR a15
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR f4
+          DECL_REF_EXPR a16
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR g1
+          DECL_REF_EXPR a17
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR g2
+          DECL_REF_EXPR a18
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR g3
+          DECL_REF_EXPR a19
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR g4
+          DECL_REF_EXPR a20
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR h1
+          DECL_REF_EXPR a21
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR h2
+          DECL_REF_EXPR a22
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR h3
+          DECL_REF_EXPR a23
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR h4
+          DECL_REF_EXPR a24
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR i1
+          DECL_REF_EXPR a25
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR i2
+          DECL_REF_EXPR a26
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR i3
+          DECL_REF_EXPR a27
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR i4
+          DECL_REF_EXPR a28
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR j1
+          DECL_REF_EXPR a29
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR j2
+          DECL_REF_EXPR a30
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR j3
+          DECL_REF_EXPR a31
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR j4
+          DECL_REF_EXPR a32
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        BINARY_OPERATOR +
+          BINARY_OPERATOR -
+            DECL_REF_EXPR a
+            DECL_REF_EXPR b
+          INTEGER_LITERAL 10
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR j1
+          DECL_REF_EXPR a29
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR j2
+          DECL_REF_EXPR a30
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR j3
+          DECL_REF_EXPR a31
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR j4
+          DECL_REF_EXPR a32
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR i1
+          DECL_REF_EXPR a25
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR i2
+          DECL_REF_EXPR a26
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR i3
+          DECL_REF_EXPR a27
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR i4
+          DECL_REF_EXPR a28
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR h1
+          DECL_REF_EXPR a21
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR h2
+          DECL_REF_EXPR a22
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR h3
+          DECL_REF_EXPR a23
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR h4
+          DECL_REF_EXPR a24
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR g1
+          DECL_REF_EXPR a17
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR g2
+          DECL_REF_EXPR a18
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR g3
+          DECL_REF_EXPR a19
+      BINARY_OPERATOR =
+        DECL_REF_EXPR h4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR g4
+          DECL_REF_EXPR a20
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR f1
+          DECL_REF_EXPR a13
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR f2
+          DECL_REF_EXPR a14
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR f3
+          DECL_REF_EXPR a15
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR f4
+          DECL_REF_EXPR a16
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR e1
+          DECL_REF_EXPR a9
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR e2
+          DECL_REF_EXPR a10
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR e3
+          DECL_REF_EXPR a11
+      BINARY_OPERATOR =
+        DECL_REF_EXPR f4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR e4
+          DECL_REF_EXPR a12
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR d1
+          DECL_REF_EXPR a5
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR d2
+          DECL_REF_EXPR a6
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR d3
+          DECL_REF_EXPR a7
+      BINARY_OPERATOR =
+        DECL_REF_EXPR e4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR d4
+          DECL_REF_EXPR a8
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR c1
+          DECL_REF_EXPR a1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR c2
+          DECL_REF_EXPR a2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR c3
+          DECL_REF_EXPR a3
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR c4
+          DECL_REF_EXPR a4
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d1
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 1
+            DECL_REF_EXPR c1
+          DECL_REF_EXPR a1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d2
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 2
+            DECL_REF_EXPR c2
+          DECL_REF_EXPR a2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d3
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 3
+            DECL_REF_EXPR c3
+          DECL_REF_EXPR a3
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d4
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            INTEGER_LITERAL 4
+            DECL_REF_EXPR c4
+          DECL_REF_EXPR a4
+      RETURN_STMT
+        BINARY_OPERATOR -
+          BINARY_OPERATOR +
+            BINARY_OPERATOR -
+              BINARY_OPERATOR +
+                BINARY_OPERATOR -
+                  BINARY_OPERATOR +
+                    BINARY_OPERATOR -
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR -
+                          BINARY_OPERATOR +
+                            BINARY_OPERATOR -
+                              BINARY_OPERATOR +
+                                BINARY_OPERATOR -
+                                  BINARY_OPERATOR +
+                                    BINARY_OPERATOR -
+                                      BINARY_OPERATOR +
+                                        BINARY_OPERATOR -
+                                          BINARY_OPERATOR +
+                                            BINARY_OPERATOR -
+                                              BINARY_OPERATOR +
+                                                BINARY_OPERATOR -
+                                                  BINARY_OPERATOR +
+                                                    BINARY_OPERATOR -
+                                                      BINARY_OPERATOR +
+                                                        BINARY_OPERATOR -
+                                                          BINARY_OPERATOR +
+                                                            BINARY_OPERATOR -
+                                                              BINARY_OPERATOR +
+                                                                BINARY_OPERATOR -
+                                                                  BINARY_OPERATOR +
+                                                                    BINARY_OPERATOR -
+                                                                      BINARY_OPERATOR +
+                                                                        BINARY_OPERATOR +
+                                                                          BINARY_OPERATOR +
+                                                                            BINARY_OPERATOR +
+                                                                              BINARY_OPERATOR +
+                                                                                BINARY_OPERATOR -
+                                                                                  BINARY_OPERATOR -
+                                                                                    BINARY_OPERATOR -
+                                                                                      BINARY_OPERATOR -
+                                                                                        BINARY_OPERATOR +
+                                                                                          BINARY_OPERATOR +
+                                                                                            BINARY_OPERATOR +
+                                                                                              BINARY_OPERATOR +
+                                                                                                BINARY_OPERATOR -
+                                                                                                  BINARY_OPERATOR -
+                                                                                                    BINARY_OPERATOR -
+                                                                                                      BINARY_OPERATOR -
+                                                                                                        BINARY_OPERATOR +
+                                                                                                          BINARY_OPERATOR +
+                                                                                                            BINARY_OPERATOR +
+                                                                                                              BINARY_OPERATOR +
+                                                                                                                BINARY_OPERATOR -
+                                                                                                                  BINARY_OPERATOR -
+                                                                                                                    BINARY_OPERATOR -
+                                                                                                                      BINARY_OPERATOR -
+                                                                                                                        BINARY_OPERATOR +
+                                                                                                                          BINARY_OPERATOR +
+                                                                                                                            BINARY_OPERATOR +
+                                                                                                                              BINARY_OPERATOR +
+                                                                                                                                BINARY_OPERATOR -
+                                                                                                                                  BINARY_OPERATOR -
+                                                                                                                                    BINARY_OPERATOR -
+                                                                                                                                      BINARY_OPERATOR -
+                                                                                                                                        BINARY_OPERATOR +
+                                                                                                                                          BINARY_OPERATOR +
+                                                                                                                                            BINARY_OPERATOR +
+                                                                                                                                              BINARY_OPERATOR +
+                                                                                                                                                DECL_REF_EXPR i
+                                                                                                                                                DECL_REF_EXPR c1
+                                                                                                                                              DECL_REF_EXPR c2
+                                                                                                                                            DECL_REF_EXPR c3
+                                                                                                                                          DECL_REF_EXPR c4
+                                                                                                                                        DECL_REF_EXPR d1
+                                                                                                                                      DECL_REF_EXPR d2
+                                                                                                                                    DECL_REF_EXPR d3
+                                                                                                                                  DECL_REF_EXPR d4
+                                                                                                                                DECL_REF_EXPR e1
+                                                                                                                              DECL_REF_EXPR e2
+                                                                                                                            DECL_REF_EXPR e3
+                                                                                                                          DECL_REF_EXPR e4
+                                                                                                                        DECL_REF_EXPR f1
+                                                                                                                      DECL_REF_EXPR f2
+                                                                                                                    DECL_REF_EXPR f3
+                                                                                                                  DECL_REF_EXPR f4
+                                                                                                                DECL_REF_EXPR g1
+                                                                                                              DECL_REF_EXPR g2
+                                                                                                            DECL_REF_EXPR g3
+                                                                                                          DECL_REF_EXPR g4
+                                                                                                        DECL_REF_EXPR h1
+                                                                                                      DECL_REF_EXPR h2
+                                                                                                    DECL_REF_EXPR h3
+                                                                                                  DECL_REF_EXPR h4
+                                                                                                DECL_REF_EXPR i1
+                                                                                              DECL_REF_EXPR i2
+                                                                                            DECL_REF_EXPR i3
+                                                                                          DECL_REF_EXPR i4
+                                                                                        DECL_REF_EXPR j1
+                                                                                      DECL_REF_EXPR j2
+                                                                                    DECL_REF_EXPR j3
+                                                                                  DECL_REF_EXPR j4
+                                                                                DECL_REF_EXPR k1
+                                                                              DECL_REF_EXPR k2
+                                                                            DECL_REF_EXPR k3
+                                                                          DECL_REF_EXPR k4
+                                                                        DECL_REF_EXPR a1
+                                                                      DECL_REF_EXPR a2
+                                                                    DECL_REF_EXPR a3
+                                                                  DECL_REF_EXPR a4
+                                                                DECL_REF_EXPR a5
+                                                              DECL_REF_EXPR a6
+                                                            DECL_REF_EXPR a7
+                                                          DECL_REF_EXPR a8
+                                                        DECL_REF_EXPR a9
+                                                      DECL_REF_EXPR a10
+                                                    DECL_REF_EXPR a11
+                                                  DECL_REF_EXPR a12
+                                                DECL_REF_EXPR a13
+                                              DECL_REF_EXPR a14
+                                            DECL_REF_EXPR a15
+                                          DECL_REF_EXPR a16
+                                        DECL_REF_EXPR a17
+                                      DECL_REF_EXPR a18
+                                    DECL_REF_EXPR a19
+                                  DECL_REF_EXPR a20
+                                DECL_REF_EXPR a21
+                              DECL_REF_EXPR a22
+                            DECL_REF_EXPR a23
+                          DECL_REF_EXPR a24
+                        DECL_REF_EXPR a25
+                      DECL_REF_EXPR a26
+                    DECL_REF_EXPR a27
+                  DECL_REF_EXPR a28
+                DECL_REF_EXPR a29
+              DECL_REF_EXPR a30
+            DECL_REF_EXPR a31
+          DECL_REF_EXPR a32
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+      DECL_STMT
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a
+          BINARY_OPERATOR *
+            INTEGER_LITERAL 2
+            INTEGER_LITERAL 9
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        CALL_EXPR
+          DECL_REF_EXPR func
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a
+      RETURN_STMT
+        DECL_REF_EXPR a

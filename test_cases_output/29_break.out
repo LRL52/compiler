@@ -1,0 +1,36 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        INTEGER_LITERAL 0
+      DECL_STMT
+        VAR_DECL sum
+      BINARY_OPERATOR =
+        DECL_REF_EXPR sum
+        INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 100
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 50
+            COMPOUND_STMT
+              BREAK_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR sum
+            BINARY_OPERATOR +
+              DECL_REF_EXPR sum
+              DECL_REF_EXPR i
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR sum

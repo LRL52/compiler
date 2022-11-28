@@ -1,0 +1,68 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL deepWhileBr
+    PARM_DECL a
+    PARM_DECL b
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL c
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR c
+          INTEGER_LITERAL 75
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL d
+          BINARY_OPERATOR =
+            DECL_REF_EXPR d
+            INTEGER_LITERAL 42
+          IF_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR c
+              INTEGER_LITERAL 100
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR c
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR c
+                  DECL_REF_EXPR d
+              IF_STMT
+                BINARY_OPERATOR >
+                  DECL_REF_EXPR c
+                  INTEGER_LITERAL 99
+                COMPOUND_STMT
+                  DECL_STMT
+                    VAR_DECL e
+                  BINARY_OPERATOR =
+                    DECL_REF_EXPR e
+                    BINARY_OPERATOR *
+                      DECL_REF_EXPR d
+                      INTEGER_LITERAL 2
+                  IF_STMT
+                    BINARY_OPERATOR ==
+                      INTEGER_LITERAL 1
+                      INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR c
+                        BINARY_OPERATOR *
+                          DECL_REF_EXPR e
+                          INTEGER_LITERAL 2
+      RETURN_STMT
+        DECL_REF_EXPR c
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL p
+      BINARY_OPERATOR =
+        DECL_REF_EXPR p
+        INTEGER_LITERAL 2
+      RETURN_STMT
+        CALL_EXPR
+          DECL_REF_EXPR deepWhileBr
+          DECL_REF_EXPR p
+          DECL_REF_EXPR p

@@ -1,0 +1,91 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL FourWhile
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 5
+      DECL_STMT
+        VAR_DECL b
+      DECL_STMT
+        VAR_DECL c
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 6
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c
+        INTEGER_LITERAL 7
+      DECL_STMT
+        VAR_DECL d
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d
+        INTEGER_LITERAL 10
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 20
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            BINARY_OPERATOR +
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 3
+          WHILE_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR b
+              INTEGER_LITERAL 10
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR b
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR b
+                  INTEGER_LITERAL 1
+              WHILE_STMT
+                BINARY_OPERATOR ==
+                  DECL_REF_EXPR c
+                  INTEGER_LITERAL 7
+                COMPOUND_STMT
+                  BINARY_OPERATOR =
+                    DECL_REF_EXPR c
+                    BINARY_OPERATOR -
+                      DECL_REF_EXPR c
+                      INTEGER_LITERAL 1
+                  WHILE_STMT
+                    BINARY_OPERATOR <
+                      DECL_REF_EXPR d
+                      INTEGER_LITERAL 20
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR d
+                        BINARY_OPERATOR +
+                          DECL_REF_EXPR d
+                          INTEGER_LITERAL 3
+                  BINARY_OPERATOR =
+                    DECL_REF_EXPR d
+                    BINARY_OPERATOR -
+                      DECL_REF_EXPR d
+                      INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                DECL_REF_EXPR c
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR c
+                  INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR b
+            BINARY_OPERATOR -
+              DECL_REF_EXPR b
+              INTEGER_LITERAL 2
+      RETURN_STMT
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            DECL_REF_EXPR a
+            BINARY_OPERATOR +
+              DECL_REF_EXPR b
+              DECL_REF_EXPR d
+          DECL_REF_EXPR c
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      RETURN_STMT
+        CALL_EXPR
+          DECL_REF_EXPR FourWhile

@@ -1,0 +1,65 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL ifElseIf
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 5
+      DECL_STMT
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 10
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 6
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR b
+            INTEGER_LITERAL 0
+        COMPOUND_STMT
+          RETURN_STMT
+            DECL_REF_EXPR a
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR &&
+              BINARY_OPERATOR ==
+                DECL_REF_EXPR b
+                INTEGER_LITERAL 10
+              BINARY_OPERATOR ==
+                DECL_REF_EXPR a
+                INTEGER_LITERAL 1
+            BINARY_OPERATOR =
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 25
+            IF_STMT
+              BINARY_OPERATOR &&
+                BINARY_OPERATOR ==
+                  DECL_REF_EXPR b
+                  INTEGER_LITERAL 10
+                BINARY_OPERATOR ==
+                  DECL_REF_EXPR a
+                  UNARY_OPERATOR -
+                    INTEGER_LITERAL 5
+              BINARY_OPERATOR =
+                DECL_REF_EXPR a
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR a
+                  INTEGER_LITERAL 15
+              BINARY_OPERATOR =
+                DECL_REF_EXPR a
+                UNARY_OPERATOR -
+                  UNARY_OPERATOR +
+                    DECL_REF_EXPR a
+      RETURN_STMT
+        DECL_REF_EXPR a
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        CALL_EXPR
+          DECL_REF_EXPR ifElseIf
+      RETURN_STMT
+        INTEGER_LITERAL 0

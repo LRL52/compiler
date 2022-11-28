@@ -1,0 +1,209 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL __HELLO
+      INIT_LIST_EXPR
+        INTEGER_LITERAL 87
+        INTEGER_LITERAL 101
+        INTEGER_LITERAL 108
+        INTEGER_LITERAL 99
+        INTEGER_LITERAL 111
+        INTEGER_LITERAL 109
+        INTEGER_LITERAL 101
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 116
+        INTEGER_LITERAL 111
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 116
+        INTEGER_LITERAL 104
+        INTEGER_LITERAL 101
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 74
+        INTEGER_LITERAL 97
+        INTEGER_LITERAL 112
+        INTEGER_LITERAL 97
+        INTEGER_LITERAL 114
+        INTEGER_LITERAL 105
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 80
+        INTEGER_LITERAL 97
+        INTEGER_LITERAL 114
+        INTEGER_LITERAL 107
+        INTEGER_LITERAL 33
+        INTEGER_LITERAL 10
+  DECL_STMT
+    VAR_DECL N4__mE___
+      INIT_LIST_EXPR
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 83
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 98
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 114
+          INTEGER_LITERAL 117
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 75
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 98
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 110
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 72
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 115
+          INTEGER_LITERAL 104
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 98
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 114
+          INTEGER_LITERAL 111
+          INTEGER_LITERAL 107
+          INTEGER_LITERAL 111
+          INTEGER_LITERAL 117
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 65
+          INTEGER_LITERAL 114
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 103
+          INTEGER_LITERAL 117
+          INTEGER_LITERAL 109
+          INTEGER_LITERAL 97
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 72
+          INTEGER_LITERAL 117
+          INTEGER_LITERAL 110
+          INTEGER_LITERAL 98
+          INTEGER_LITERAL 111
+          INTEGER_LITERAL 114
+          INTEGER_LITERAL 117
+          INTEGER_LITERAL 116
+          INTEGER_LITERAL 111
+          INTEGER_LITERAL 32
+          INTEGER_LITERAL 80
+          INTEGER_LITERAL 101
+          INTEGER_LITERAL 110
+          INTEGER_LITERAL 103
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 110
+        INIT_LIST_EXPR
+          INTEGER_LITERAL 84
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 114
+          INTEGER_LITERAL 105
+          INTEGER_LITERAL 107
+          INTEGER_LITERAL 117
+          INTEGER_LITERAL 32
+          INTEGER_LITERAL 79
+          INTEGER_LITERAL 111
+          INTEGER_LITERAL 107
+          INTEGER_LITERAL 97
+          INTEGER_LITERAL 109
+          INTEGER_LITERAL 105
+  DECL_STMT
+    VAR_DECL saY_HeI10_To
+      INIT_LIST_EXPR
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 115
+        INTEGER_LITERAL 97
+        INTEGER_LITERAL 121
+        INTEGER_LITERAL 115
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 104
+        INTEGER_LITERAL 101
+        INTEGER_LITERAL 108
+        INTEGER_LITERAL 108
+        INTEGER_LITERAL 111
+        INTEGER_LITERAL 32
+        INTEGER_LITERAL 116
+        INTEGER_LITERAL 111
+        INTEGER_LITERAL 32
+  DECL_STMT
+    VAR_DECL RET
+      INIT_LIST_EXPR
+        INTEGER_LITERAL 10
+  FUNCTION_DECL putstr
+    PARM_DECL str
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL iNd__1X
+      BINARY_OPERATOR =
+        DECL_REF_EXPR iNd__1X
+        INTEGER_LITERAL 0
+      WHILE_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR str
+          DECL_REF_EXPR iNd__1X
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR str
+              DECL_REF_EXPR iNd__1X
+          BINARY_OPERATOR =
+            DECL_REF_EXPR iNd__1X
+            BINARY_OPERATOR +
+              DECL_REF_EXPR iNd__1X
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR iNd__1X
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putstr
+        DECL_REF_EXPR __HELLO
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        INTEGER_LITERAL 1
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL _
+              BINARY_OPERATOR /
+                DECL_REF_EXPR i
+                INTEGER_LITERAL 6
+          DECL_STMT
+            VAR_DECL __
+              BINARY_OPERATOR %
+                DECL_REF_EXPR i
+                INTEGER_LITERAL 6
+          IF_STMT
+            BINARY_OPERATOR !=
+              DECL_REF_EXPR _
+              DECL_REF_EXPR __
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putstr
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR N4__mE___
+                  DECL_REF_EXPR _
+              CALL_EXPR
+                DECL_REF_EXPR putstr
+                DECL_REF_EXPR saY_HeI10_To
+              CALL_EXPR
+                DECL_REF_EXPR putstr
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR N4__mE___
+                  DECL_REF_EXPR __
+              CALL_EXPR
+                DECL_REF_EXPR putstr
+                DECL_REF_EXPR RET
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR %
+              BINARY_OPERATOR +
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 17
+                INTEGER_LITERAL 23
+              INTEGER_LITERAL 32
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 0
+            COMPOUND_STMT
+              BREAK_STMT
+      RETURN_STMT
+        INTEGER_LITERAL 0

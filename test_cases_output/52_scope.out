@@ -1,0 +1,66 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+      INTEGER_LITERAL 7
+  FUNCTION_DECL func
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL b
+          DECL_REF_EXPR a
+      DECL_STMT
+        VAR_DECL a
+          INTEGER_LITERAL 1
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            BINARY_OPERATOR +
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 1
+          RETURN_STMT
+            INTEGER_LITERAL 1
+        RETURN_STMT
+          INTEGER_LITERAL 0
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL result
+          INTEGER_LITERAL 0
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 100
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR ==
+              CALL_EXPR
+                DECL_REF_EXPR func
+              INTEGER_LITERAL 1
+            BINARY_OPERATOR =
+              DECL_REF_EXPR result
+              BINARY_OPERATOR +
+                DECL_REF_EXPR result
+                INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      IF_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR result
+          INTEGER_LITERAL 100
+        CALL_EXPR
+          DECL_REF_EXPR putint
+          INTEGER_LITERAL 1
+        CALL_EXPR
+          DECL_REF_EXPR putint
+          INTEGER_LITERAL 0
+      RETURN_STMT
+        INTEGER_LITERAL 0

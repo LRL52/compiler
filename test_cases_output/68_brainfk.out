@@ -1,0 +1,188 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL TAPE_LEN
+      INTEGER_LITERAL 65536
+    VAR_DECL BUFFER_LEN
+      INTEGER_LITERAL 32768
+  DECL_STMT
+    VAR_DECL tape
+    VAR_DECL program
+    VAR_DECL ptr
+      INTEGER_LITERAL 0
+  FUNCTION_DECL read_program
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+        VAR_DECL len
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          DECL_REF_EXPR len
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR program
+              DECL_REF_EXPR i
+            CALL_EXPR
+              DECL_REF_EXPR getch
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR program
+          DECL_REF_EXPR i
+        INTEGER_LITERAL 0
+  FUNCTION_DECL interpret
+    PARM_DECL input
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL cur_char
+        VAR_DECL loop
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR input
+          DECL_REF_EXPR i
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR cur_char
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR input
+              DECL_REF_EXPR i
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR cur_char
+              INTEGER_LITERAL 62
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR ptr
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR ptr
+                  INTEGER_LITERAL 1
+            IF_STMT
+              BINARY_OPERATOR ==
+                DECL_REF_EXPR cur_char
+                INTEGER_LITERAL 60
+              COMPOUND_STMT
+                BINARY_OPERATOR =
+                  DECL_REF_EXPR ptr
+                  BINARY_OPERATOR -
+                    DECL_REF_EXPR ptr
+                    INTEGER_LITERAL 1
+              IF_STMT
+                BINARY_OPERATOR ==
+                  DECL_REF_EXPR cur_char
+                  INTEGER_LITERAL 43
+                COMPOUND_STMT
+                  BINARY_OPERATOR =
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR tape
+                      DECL_REF_EXPR ptr
+                    BINARY_OPERATOR +
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR tape
+                        DECL_REF_EXPR ptr
+                      INTEGER_LITERAL 1
+                IF_STMT
+                  BINARY_OPERATOR ==
+                    DECL_REF_EXPR cur_char
+                    INTEGER_LITERAL 45
+                  COMPOUND_STMT
+                    BINARY_OPERATOR =
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR tape
+                        DECL_REF_EXPR ptr
+                      BINARY_OPERATOR -
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR tape
+                          DECL_REF_EXPR ptr
+                        INTEGER_LITERAL 1
+                  IF_STMT
+                    BINARY_OPERATOR ==
+                      DECL_REF_EXPR cur_char
+                      INTEGER_LITERAL 46
+                    COMPOUND_STMT
+                      CALL_EXPR
+                        DECL_REF_EXPR putch
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR tape
+                          DECL_REF_EXPR ptr
+                    IF_STMT
+                      BINARY_OPERATOR ==
+                        DECL_REF_EXPR cur_char
+                        INTEGER_LITERAL 44
+                      COMPOUND_STMT
+                        BINARY_OPERATOR =
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR tape
+                            DECL_REF_EXPR ptr
+                          CALL_EXPR
+                            DECL_REF_EXPR getch
+                      IF_STMT
+                        BINARY_OPERATOR &&
+                          BINARY_OPERATOR ==
+                            DECL_REF_EXPR cur_char
+                            INTEGER_LITERAL 93
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR tape
+                            DECL_REF_EXPR ptr
+                        COMPOUND_STMT
+                          BINARY_OPERATOR =
+                            DECL_REF_EXPR loop
+                            INTEGER_LITERAL 1
+                          WHILE_STMT
+                            BINARY_OPERATOR >
+                              DECL_REF_EXPR loop
+                              INTEGER_LITERAL 0
+                            COMPOUND_STMT
+                              BINARY_OPERATOR =
+                                DECL_REF_EXPR i
+                                BINARY_OPERATOR -
+                                  DECL_REF_EXPR i
+                                  INTEGER_LITERAL 1
+                              BINARY_OPERATOR =
+                                DECL_REF_EXPR cur_char
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR input
+                                  DECL_REF_EXPR i
+                              IF_STMT
+                                BINARY_OPERATOR ==
+                                  DECL_REF_EXPR cur_char
+                                  INTEGER_LITERAL 91
+                                COMPOUND_STMT
+                                  BINARY_OPERATOR =
+                                    DECL_REF_EXPR loop
+                                    BINARY_OPERATOR -
+                                      DECL_REF_EXPR loop
+                                      INTEGER_LITERAL 1
+                                IF_STMT
+                                  BINARY_OPERATOR ==
+                                    DECL_REF_EXPR cur_char
+                                    INTEGER_LITERAL 93
+                                  COMPOUND_STMT
+                                    BINARY_OPERATOR =
+                                      DECL_REF_EXPR loop
+                                      BINARY_OPERATOR +
+                                        DECL_REF_EXPR loop
+                                        INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR read_program
+      CALL_EXPR
+        DECL_REF_EXPR interpret
+        DECL_REF_EXPR program
+      RETURN_STMT
+        INTEGER_LITERAL 0

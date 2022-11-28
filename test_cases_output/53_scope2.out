@@ -1,0 +1,67 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL k
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR k
+        INTEGER_LITERAL 3389
+      IF_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR k
+          INTEGER_LITERAL 10000
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR k
+            BINARY_OPERATOR +
+              DECL_REF_EXPR k
+              INTEGER_LITERAL 1
+          DECL_STMT
+            VAR_DECL k
+              INTEGER_LITERAL 112
+          WHILE_STMT
+            BINARY_OPERATOR >
+              DECL_REF_EXPR k
+              INTEGER_LITERAL 10
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR k
+                BINARY_OPERATOR -
+                  DECL_REF_EXPR k
+                  INTEGER_LITERAL 88
+              IF_STMT
+                BINARY_OPERATOR <
+                  DECL_REF_EXPR k
+                  INTEGER_LITERAL 1000
+                COMPOUND_STMT
+                  DECL_STMT
+                    VAR_DECL g
+                      INTEGER_LITERAL 9
+                  COMPOUND_STMT
+                    DECL_STMT
+                      VAR_DECL l
+                        INTEGER_LITERAL 11
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR g
+                        INTEGER_LITERAL 10
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR k
+                        BINARY_OPERATOR -
+                          DECL_REF_EXPR k
+                          DECL_REF_EXPR g
+                      DECL_STMT
+                        VAR_DECL g
+                          INTEGER_LITERAL 11
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR k
+                        BINARY_OPERATOR +
+                          BINARY_OPERATOR +
+                            DECL_REF_EXPR k
+                            DECL_REF_EXPR g
+                          DECL_REF_EXPR l
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR k
+      RETURN_STMT
+        DECL_REF_EXPR k

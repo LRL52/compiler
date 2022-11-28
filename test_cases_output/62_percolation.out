@@ -1,0 +1,314 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL array
+  DECL_STMT
+    VAR_DECL n
+  FUNCTION_DECL init
+    PARM_DECL n
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR i
+          BINARY_OPERATOR +
+            BINARY_OPERATOR *
+              DECL_REF_EXPR n
+              DECL_REF_EXPR n
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR array
+              DECL_REF_EXPR i
+            UNARY_OPERATOR -
+              INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+  FUNCTION_DECL findfa
+    PARM_DECL a
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR array
+            DECL_REF_EXPR a
+          DECL_REF_EXPR a
+        RETURN_STMT
+          DECL_REF_EXPR a
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR array
+              DECL_REF_EXPR a
+            CALL_EXPR
+              DECL_REF_EXPR findfa
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR array
+                DECL_REF_EXPR a
+          RETURN_STMT
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR array
+              DECL_REF_EXPR a
+  FUNCTION_DECL mmerge
+    PARM_DECL a
+    PARM_DECL b
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL m
+          CALL_EXPR
+            DECL_REF_EXPR findfa
+            DECL_REF_EXPR a
+      DECL_STMT
+        VAR_DECL n
+          CALL_EXPR
+            DECL_REF_EXPR findfa
+            DECL_REF_EXPR b
+      IF_STMT
+        BINARY_OPERATOR !=
+          DECL_REF_EXPR m
+          DECL_REF_EXPR n
+        BINARY_OPERATOR =
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR array
+            DECL_REF_EXPR m
+          DECL_REF_EXPR n
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL t
+        VAR_DECL m
+      DECL_STMT
+        VAR_DECL a
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR t
+        INTEGER_LITERAL 1
+      WHILE_STMT
+        DECL_REF_EXPR t
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR t
+            BINARY_OPERATOR -
+              DECL_REF_EXPR t
+              INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR n
+            INTEGER_LITERAL 4
+          BINARY_OPERATOR =
+            DECL_REF_EXPR m
+            INTEGER_LITERAL 10
+          DECL_STMT
+            VAR_DECL i
+              INTEGER_LITERAL 0
+          DECL_STMT
+            VAR_DECL flag
+              INTEGER_LITERAL 0
+          CALL_EXPR
+            DECL_REF_EXPR init
+            DECL_REF_EXPR n
+          DECL_STMT
+            VAR_DECL k
+              BINARY_OPERATOR +
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR n
+                  DECL_REF_EXPR n
+                INTEGER_LITERAL 1
+          WHILE_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR i
+              DECL_REF_EXPR m
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR a
+                CALL_EXPR
+                  DECL_REF_EXPR getint
+              BINARY_OPERATOR =
+                DECL_REF_EXPR b
+                CALL_EXPR
+                  DECL_REF_EXPR getint
+              IF_STMT
+                UNARY_OPERATOR !
+                  DECL_REF_EXPR flag
+                COMPOUND_STMT
+                  DECL_STMT
+                    VAR_DECL loc
+                      BINARY_OPERATOR +
+                        BINARY_OPERATOR *
+                          DECL_REF_EXPR n
+                          BINARY_OPERATOR -
+                            DECL_REF_EXPR a
+                            INTEGER_LITERAL 1
+                        DECL_REF_EXPR b
+                  BINARY_OPERATOR =
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR array
+                      DECL_REF_EXPR loc
+                    DECL_REF_EXPR loc
+                  IF_STMT
+                    BINARY_OPERATOR ==
+                      DECL_REF_EXPR a
+                      INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          INTEGER_LITERAL 0
+                        INTEGER_LITERAL 0
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        INTEGER_LITERAL 0
+                  IF_STMT
+                    BINARY_OPERATOR ==
+                      DECL_REF_EXPR a
+                      DECL_REF_EXPR n
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          DECL_REF_EXPR k
+                        DECL_REF_EXPR k
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        DECL_REF_EXPR k
+                  IF_STMT
+                    BINARY_OPERATOR &&
+                      BINARY_OPERATOR <
+                        DECL_REF_EXPR b
+                        DECL_REF_EXPR n
+                      BINARY_OPERATOR !=
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          BINARY_OPERATOR +
+                            DECL_REF_EXPR loc
+                            INTEGER_LITERAL 1
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        BINARY_OPERATOR +
+                          DECL_REF_EXPR loc
+                          INTEGER_LITERAL 1
+                  IF_STMT
+                    BINARY_OPERATOR &&
+                      BINARY_OPERATOR >
+                        DECL_REF_EXPR b
+                        INTEGER_LITERAL 1
+                      BINARY_OPERATOR !=
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          BINARY_OPERATOR -
+                            DECL_REF_EXPR loc
+                            INTEGER_LITERAL 1
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        BINARY_OPERATOR -
+                          DECL_REF_EXPR loc
+                          INTEGER_LITERAL 1
+                  IF_STMT
+                    BINARY_OPERATOR &&
+                      BINARY_OPERATOR <
+                        DECL_REF_EXPR a
+                        DECL_REF_EXPR n
+                      BINARY_OPERATOR !=
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          BINARY_OPERATOR +
+                            DECL_REF_EXPR loc
+                            DECL_REF_EXPR n
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        BINARY_OPERATOR +
+                          DECL_REF_EXPR loc
+                          DECL_REF_EXPR n
+                  IF_STMT
+                    BINARY_OPERATOR &&
+                      BINARY_OPERATOR >
+                        DECL_REF_EXPR a
+                        INTEGER_LITERAL 1
+                      BINARY_OPERATOR !=
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR array
+                          BINARY_OPERATOR -
+                            DECL_REF_EXPR loc
+                            DECL_REF_EXPR n
+                        UNARY_OPERATOR -
+                          INTEGER_LITERAL 1
+                    COMPOUND_STMT
+                      CALL_EXPR
+                        DECL_REF_EXPR mmerge
+                        DECL_REF_EXPR loc
+                        BINARY_OPERATOR -
+                          DECL_REF_EXPR loc
+                          DECL_REF_EXPR n
+                  IF_STMT
+                    BINARY_OPERATOR &&
+                      BINARY_OPERATOR &&
+                        BINARY_OPERATOR !=
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR array
+                            INTEGER_LITERAL 0
+                          UNARY_OPERATOR -
+                            INTEGER_LITERAL 1
+                        BINARY_OPERATOR !=
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR array
+                            DECL_REF_EXPR k
+                          UNARY_OPERATOR -
+                            INTEGER_LITERAL 1
+                      BINARY_OPERATOR ==
+                        CALL_EXPR
+                          DECL_REF_EXPR findfa
+                          INTEGER_LITERAL 0
+                        CALL_EXPR
+                          DECL_REF_EXPR findfa
+                          DECL_REF_EXPR k
+                    COMPOUND_STMT
+                      BINARY_OPERATOR =
+                        DECL_REF_EXPR flag
+                        INTEGER_LITERAL 1
+                      DECL_STMT
+                        VAR_DECL tmp
+                          BINARY_OPERATOR +
+                            DECL_REF_EXPR i
+                            INTEGER_LITERAL 1
+                      CALL_EXPR
+                        DECL_REF_EXPR putint
+                        DECL_REF_EXPR tmp
+                      CALL_EXPR
+                        DECL_REF_EXPR putch
+                        INTEGER_LITERAL 10
+              BINARY_OPERATOR =
+                DECL_REF_EXPR i
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+          IF_STMT
+            UNARY_OPERATOR !
+              DECL_REF_EXPR flag
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putint
+                UNARY_OPERATOR -
+                  INTEGER_LITERAL 1
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+      RETURN_STMT
+        INTEGER_LITERAL 0

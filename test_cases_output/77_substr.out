@@ -1,0 +1,242 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL MAX
+    PARM_DECL a
+    PARM_DECL b
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR a
+          DECL_REF_EXPR b
+        RETURN_STMT
+          DECL_REF_EXPR a
+        IF_STMT
+          BINARY_OPERATOR >
+            DECL_REF_EXPR a
+            DECL_REF_EXPR b
+          RETURN_STMT
+            DECL_REF_EXPR a
+          RETURN_STMT
+            DECL_REF_EXPR b
+  FUNCTION_DECL max_sum_nonadjacent
+    PARM_DECL arr
+    PARM_DECL n
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL temp
+          INIT_LIST_EXPR
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR temp
+          INTEGER_LITERAL 0
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR arr
+          INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR temp
+          INTEGER_LITERAL 1
+        CALL_EXPR
+          DECL_REF_EXPR MAX
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR arr
+            INTEGER_LITERAL 0
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR arr
+            INTEGER_LITERAL 1
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 2
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          DECL_REF_EXPR n
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR temp
+              DECL_REF_EXPR i
+            CALL_EXPR
+              DECL_REF_EXPR MAX
+              BINARY_OPERATOR +
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR temp
+                  BINARY_OPERATOR -
+                    DECL_REF_EXPR i
+                    INTEGER_LITERAL 2
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR arr
+                  DECL_REF_EXPR i
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR temp
+                BINARY_OPERATOR -
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR temp
+          BINARY_OPERATOR -
+            DECL_REF_EXPR n
+            INTEGER_LITERAL 1
+  FUNCTION_DECL longest_common_subseq
+    PARM_DECL arr1
+    PARM_DECL len1
+    PARM_DECL arr2
+    PARM_DECL len2
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL p
+          INIT_LIST_EXPR
+      DECL_STMT
+        VAR_DECL i
+        VAR_DECL j
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR i
+          DECL_REF_EXPR len1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR j
+            INTEGER_LITERAL 1
+          WHILE_STMT
+            BINARY_OPERATOR <=
+              DECL_REF_EXPR j
+              DECL_REF_EXPR len2
+            COMPOUND_STMT
+              IF_STMT
+                BINARY_OPERATOR ==
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR arr1
+                    BINARY_OPERATOR -
+                      DECL_REF_EXPR i
+                      INTEGER_LITERAL 1
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR arr2
+                    BINARY_OPERATOR -
+                      DECL_REF_EXPR j
+                      INTEGER_LITERAL 1
+                COMPOUND_STMT
+                  BINARY_OPERATOR =
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR p
+                        DECL_REF_EXPR i
+                      DECL_REF_EXPR j
+                    BINARY_OPERATOR +
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR p
+                          BINARY_OPERATOR -
+                            DECL_REF_EXPR i
+                            INTEGER_LITERAL 1
+                        BINARY_OPERATOR -
+                          DECL_REF_EXPR j
+                          INTEGER_LITERAL 1
+                      INTEGER_LITERAL 1
+                COMPOUND_STMT
+                  BINARY_OPERATOR =
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR p
+                        DECL_REF_EXPR i
+                      DECL_REF_EXPR j
+                    CALL_EXPR
+                      DECL_REF_EXPR MAX
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR p
+                          BINARY_OPERATOR -
+                            DECL_REF_EXPR i
+                            INTEGER_LITERAL 1
+                        DECL_REF_EXPR j
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR p
+                          DECL_REF_EXPR i
+                        BINARY_OPERATOR -
+                          DECL_REF_EXPR j
+                          INTEGER_LITERAL 1
+              BINARY_OPERATOR =
+                DECL_REF_EXPR j
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR j
+                  INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR p
+            DECL_REF_EXPR len1
+          DECL_REF_EXPR len2
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL A
+          INIT_LIST_EXPR
+            INTEGER_LITERAL 8
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 4
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 2
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 0
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 9
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 4
+            INTEGER_LITERAL 8
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 0
+      DECL_STMT
+        VAR_DECL B
+          INIT_LIST_EXPR
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 9
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 4
+            INTEGER_LITERAL 2
+            INTEGER_LITERAL 4
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 6
+            INTEGER_LITERAL 8
+            INTEGER_LITERAL 0
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 5
+      DECL_STMT
+        VAR_DECL An
+        VAR_DECL Bn
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        CALL_EXPR
+          DECL_REF_EXPR max_sum_nonadjacent
+          DECL_REF_EXPR A
+          INTEGER_LITERAL 15
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        CALL_EXPR
+          DECL_REF_EXPR longest_common_subseq
+          DECL_REF_EXPR A
+          INTEGER_LITERAL 15
+          DECL_REF_EXPR B
+          INTEGER_LITERAL 13
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        INTEGER_LITERAL 0

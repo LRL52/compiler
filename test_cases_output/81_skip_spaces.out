@@ -1,0 +1,43 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL arr
+        VAR_DECL i
+          INTEGER_LITERAL 0
+        VAR_DECL sum
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        CALL_EXPR
+          DECL_REF_EXPR getint
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR arr
+              DECL_REF_EXPR i
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      WHILE_STMT
+        DECL_REF_EXPR i
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR -
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+          BINARY_OPERATOR =
+            DECL_REF_EXPR sum
+            BINARY_OPERATOR +
+              DECL_REF_EXPR sum
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR arr
+                DECL_REF_EXPR i
+      RETURN_STMT
+        BINARY_OPERATOR %
+          DECL_REF_EXPR sum
+          INTEGER_LITERAL 79

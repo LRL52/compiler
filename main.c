@@ -1,3 +1,4 @@
+//ID: LRL52  Date: 2022.11.26 ~ 11.28
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,9 +11,9 @@ extern int yylex();
 extern _YYLVAL yylval;
 extern char* yytext;
 
-#define MAXN 1005
+#define MAXN 100005
 enum yytokentype tok;
-char s[MAXN][MAXN];
+char s[MAXN][105];
 int stk[MAXN], top;
 past tail;
 
@@ -27,6 +28,8 @@ void advance() {
 	} else {
 		tok = stk[++top];
 	}
+	// printf("top = %d\n", top);
+	if(top >= MAXN - 5) assert(0);
 	//printf("tok: %s\n", yytext);
 }
 
@@ -169,6 +172,9 @@ past ArraySubscripts() {
 	past ret = NewNode(NULL, ARRAY_SUBSCRIPT_EXPR, NULL);
 	ret->right = Exp();
 	assert(ret->right != NULL);
+	if(tok != Y_RSQUARE) {
+		puts("GG");
+	}
 	assert(tok == Y_RSQUARE);
 	advance();
 	while(1) {
@@ -306,7 +312,7 @@ past Stmt() { //非空
 			assert(tok == Y_SEMICOLON); advance();
 		}
 	} else {
-		ret = Exp(); assert(ret != NULL); //把LVal和Exp都当Exp处理，但这样会把赋值语句左边不是左值的情况也处理成正确的了
+		ret = Exp(); assert(ret != NULL);
 		assert(tok == Y_ASSIGN || Y_SEMICOLON);
 		enum yytokentype _tok = tok;
 		top = _top, tok = stk[top]; Free(ret); //先探测，再top回溯，再进入
@@ -330,11 +336,10 @@ past BlockItem() { //非空
 }
 
 past BlockItems() { //非空
-	past ret = NewNode(NULL, COMPOUND_STMT, NULL);
-	ret->left = BlockItem();
-	assert(ret->left != NULL);
+	past ret = BlockItem();
+	assert(ret != NULL);
 
-	past p = ret->left;
+	past p = ret;
 	while(tok != Y_RBRACKET) { //人脑智慧判断BlockItems是否结束
 		p->next = BlockItem();
 		assert(p->next != NULL);
@@ -347,7 +352,11 @@ past BlockItems() { //非空
 past Block() {
     assert(tok == Y_LBRACKET);
 	advance();
-    past ret = BlockItems();
+	past ret = NewNode(NULL, COMPOUND_STMT, NULL);
+    if(tok != Y_RBRACKET) {
+		ret->left = BlockItems();
+		assert(ret->left != NULL);
+	}
 	assert(tok == Y_RBRACKET);
 	advance();
 	return ret;
@@ -567,6 +576,9 @@ past _CompUnit() {
 	if(tok == Y_CONST) {
 		ret = Decl();
 	} else {
+		// if(!Type(tok)) {
+		// 	puts("GG");
+		// }
 		assert(Type(tok)); advance();
 		assert(tok == Y_ID); advance();
 		int _tok = tok; top = _top, tok = stk[top];
@@ -602,7 +614,7 @@ void print(past cur) {
 		case CALL_EXPR: printf("CALL_EXPR"); break;
 		case INTEGER_LITERAL: printf("INTEGER_LITERAL %d", cur->ivalue); break;
 		case FLOATING_LITERAL: printf("FLOATING_LITERAL %f", cur->fvalue); break;
-		case UNARY_OPERATOR: printf("UNARY_OPERATOR"); break;
+		case UNARY_OPERATOR: printf("UNARY_OPERATOR %s", cur->svalue); break;
 		case ARRAY_SUBSCRIPT_EXPR: printf("ARRAY_SUBSCRIPT_EXPR"); break;
 		case BINARY_OPERATOR: printf("BINARY_OPERATOR %s", cur->svalue); break;
 		case IF_STMT: printf("IF_STMT"); break;
@@ -636,7 +648,8 @@ void showAst(past node, int nest) {
 
 int main(int argc, char **argv)
 {
-	freopen("test.in", "r", stdin);
+	//freopen("testdata.in", "r", stdin);
+	// freopen("./test_cases/86_long_code2.sy", "r", stdin);
 	advance();
 	past root = CompUnit();
 	showAst(root, 0);

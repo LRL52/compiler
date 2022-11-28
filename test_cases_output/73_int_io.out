@@ -1,0 +1,137 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL ascii_0
+      INTEGER_LITERAL 48
+  FUNCTION_DECL my_getint
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL sum
+          INTEGER_LITERAL 0
+        VAR_DECL c
+      WHILE_STMT
+        INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR c
+            BINARY_OPERATOR -
+              CALL_EXPR
+                DECL_REF_EXPR getch
+              DECL_REF_EXPR ascii_0
+          IF_STMT
+            BINARY_OPERATOR ||
+              BINARY_OPERATOR <
+                DECL_REF_EXPR c
+                INTEGER_LITERAL 0
+              BINARY_OPERATOR >
+                DECL_REF_EXPR c
+                INTEGER_LITERAL 9
+            COMPOUND_STMT
+              CONTINUE_STMT
+            COMPOUND_STMT
+              BREAK_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR sum
+        DECL_REF_EXPR c
+      WHILE_STMT
+        INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR c
+            BINARY_OPERATOR -
+              CALL_EXPR
+                DECL_REF_EXPR getch
+              DECL_REF_EXPR ascii_0
+          IF_STMT
+            BINARY_OPERATOR &&
+              BINARY_OPERATOR >=
+                DECL_REF_EXPR c
+                INTEGER_LITERAL 0
+              BINARY_OPERATOR <=
+                DECL_REF_EXPR c
+                INTEGER_LITERAL 9
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR sum
+                BINARY_OPERATOR +
+                  BINARY_OPERATOR *
+                    DECL_REF_EXPR sum
+                    INTEGER_LITERAL 10
+                  DECL_REF_EXPR c
+            COMPOUND_STMT
+              BREAK_STMT
+      RETURN_STMT
+        DECL_REF_EXPR sum
+  FUNCTION_DECL my_putint
+    PARM_DECL a
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL b
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR b
+              DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              BINARY_OPERATOR %
+                DECL_REF_EXPR a
+                INTEGER_LITERAL 10
+              DECL_REF_EXPR ascii_0
+          BINARY_OPERATOR =
+            DECL_REF_EXPR a
+            BINARY_OPERATOR /
+              DECL_REF_EXPR a
+              INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR -
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR b
+              DECL_REF_EXPR i
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL n
+          CALL_EXPR
+            DECL_REF_EXPR my_getint
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR n
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL m
+              CALL_EXPR
+                DECL_REF_EXPR my_getint
+          CALL_EXPR
+            DECL_REF_EXPR my_putint
+            DECL_REF_EXPR m
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR n
+            BINARY_OPERATOR -
+              DECL_REF_EXPR n
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0

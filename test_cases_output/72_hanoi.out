@@ -1,0 +1,83 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL move
+    PARM_DECL x
+    PARM_DECL y
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR x
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR y
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 44
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+  FUNCTION_DECL hanoi
+    PARM_DECL n
+    PARM_DECL one
+    PARM_DECL two
+    PARM_DECL three
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR n
+          INTEGER_LITERAL 1
+        CALL_EXPR
+          DECL_REF_EXPR move
+          DECL_REF_EXPR one
+          DECL_REF_EXPR three
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR hanoi
+            BINARY_OPERATOR -
+              DECL_REF_EXPR n
+              INTEGER_LITERAL 1
+            DECL_REF_EXPR one
+            DECL_REF_EXPR three
+            DECL_REF_EXPR two
+          CALL_EXPR
+            DECL_REF_EXPR move
+            DECL_REF_EXPR one
+            DECL_REF_EXPR three
+          CALL_EXPR
+            DECL_REF_EXPR hanoi
+            BINARY_OPERATOR -
+              DECL_REF_EXPR n
+              INTEGER_LITERAL 1
+            DECL_REF_EXPR two
+            DECL_REF_EXPR one
+            DECL_REF_EXPR three
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL n
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR n
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR hanoi
+            CALL_EXPR
+              DECL_REF_EXPR getint
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 2
+            INTEGER_LITERAL 3
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR n
+            BINARY_OPERATOR -
+              DECL_REF_EXPR n
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0

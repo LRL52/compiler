@@ -1,0 +1,284 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL func1
+    PARM_DECL x
+    PARM_DECL y
+    PARM_DECL z
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR z
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          RETURN_STMT
+            BINARY_OPERATOR *
+              DECL_REF_EXPR x
+              DECL_REF_EXPR y
+        COMPOUND_STMT
+          RETURN_STMT
+            CALL_EXPR
+              DECL_REF_EXPR func1
+              DECL_REF_EXPR x
+              BINARY_OPERATOR -
+                DECL_REF_EXPR y
+                DECL_REF_EXPR z
+              INTEGER_LITERAL 0
+  FUNCTION_DECL func2
+    PARM_DECL x
+    PARM_DECL y
+    COMPOUND_STMT
+      IF_STMT
+        DECL_REF_EXPR y
+        COMPOUND_STMT
+          RETURN_STMT
+            CALL_EXPR
+              DECL_REF_EXPR func2
+              BINARY_OPERATOR %
+                DECL_REF_EXPR x
+                DECL_REF_EXPR y
+              INTEGER_LITERAL 0
+        COMPOUND_STMT
+          RETURN_STMT
+            DECL_REF_EXPR x
+  FUNCTION_DECL func3
+    PARM_DECL x
+    PARM_DECL y
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR y
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          RETURN_STMT
+            BINARY_OPERATOR +
+              DECL_REF_EXPR x
+              INTEGER_LITERAL 1
+        COMPOUND_STMT
+          RETURN_STMT
+            CALL_EXPR
+              DECL_REF_EXPR func3
+              BINARY_OPERATOR +
+                DECL_REF_EXPR x
+                DECL_REF_EXPR y
+              INTEGER_LITERAL 0
+  FUNCTION_DECL func4
+    PARM_DECL x
+    PARM_DECL y
+    PARM_DECL z
+    COMPOUND_STMT
+      IF_STMT
+        DECL_REF_EXPR x
+        COMPOUND_STMT
+          RETURN_STMT
+            DECL_REF_EXPR y
+        COMPOUND_STMT
+          RETURN_STMT
+            DECL_REF_EXPR z
+  FUNCTION_DECL func5
+    PARM_DECL x
+    COMPOUND_STMT
+      RETURN_STMT
+        UNARY_OPERATOR -
+          DECL_REF_EXPR x
+  FUNCTION_DECL func6
+    PARM_DECL x
+    PARM_DECL y
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR &&
+          DECL_REF_EXPR x
+          DECL_REF_EXPR y
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 0
+  FUNCTION_DECL func7
+    PARM_DECL x
+    COMPOUND_STMT
+      IF_STMT
+        UNARY_OPERATOR !
+          DECL_REF_EXPR x
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 0
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i1
+          CALL_EXPR
+            DECL_REF_EXPR getint
+        VAR_DECL i2
+          CALL_EXPR
+            DECL_REF_EXPR getint
+        VAR_DECL i3
+          CALL_EXPR
+            DECL_REF_EXPR getint
+        VAR_DECL i4
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      DECL_STMT
+        VAR_DECL arr
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 10
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR arr
+              DECL_REF_EXPR i
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      DECL_STMT
+        VAR_DECL a
+          CALL_EXPR
+            DECL_REF_EXPR func1
+            CALL_EXPR
+              DECL_REF_EXPR func2
+              CALL_EXPR
+                DECL_REF_EXPR func1
+                CALL_EXPR
+                  DECL_REF_EXPR func3
+                  CALL_EXPR
+                    DECL_REF_EXPR func4
+                    CALL_EXPR
+                      DECL_REF_EXPR func5
+                      CALL_EXPR
+                        DECL_REF_EXPR func3
+                        CALL_EXPR
+                          DECL_REF_EXPR func2
+                          CALL_EXPR
+                            DECL_REF_EXPR func6
+                            CALL_EXPR
+                              DECL_REF_EXPR func7
+                              DECL_REF_EXPR i1
+                            CALL_EXPR
+                              DECL_REF_EXPR func5
+                              DECL_REF_EXPR i2
+                          DECL_REF_EXPR i3
+                        DECL_REF_EXPR i4
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR arr
+                      INTEGER_LITERAL 0
+                    CALL_EXPR
+                      DECL_REF_EXPR func1
+                      CALL_EXPR
+                        DECL_REF_EXPR func2
+                        CALL_EXPR
+                          DECL_REF_EXPR func3
+                          CALL_EXPR
+                            DECL_REF_EXPR func4
+                            CALL_EXPR
+                              DECL_REF_EXPR func5
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR arr
+                                INTEGER_LITERAL 1
+                            CALL_EXPR
+                              DECL_REF_EXPR func6
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR arr
+                                INTEGER_LITERAL 2
+                              CALL_EXPR
+                                DECL_REF_EXPR func7
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR arr
+                                  INTEGER_LITERAL 3
+                            CALL_EXPR
+                              DECL_REF_EXPR func2
+                              ARRAY_SUBSCRIPT_EXPR
+                                DECL_REF_EXPR arr
+                                INTEGER_LITERAL 4
+                              CALL_EXPR
+                                DECL_REF_EXPR func7
+                                ARRAY_SUBSCRIPT_EXPR
+                                  DECL_REF_EXPR arr
+                                  INTEGER_LITERAL 5
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR arr
+                            INTEGER_LITERAL 6
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR arr
+                          INTEGER_LITERAL 7
+                      CALL_EXPR
+                        DECL_REF_EXPR func3
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR arr
+                          INTEGER_LITERAL 8
+                        CALL_EXPR
+                          DECL_REF_EXPR func7
+                          ARRAY_SUBSCRIPT_EXPR
+                            DECL_REF_EXPR arr
+                            INTEGER_LITERAL 9
+                      DECL_REF_EXPR i1
+                  CALL_EXPR
+                    DECL_REF_EXPR func2
+                    DECL_REF_EXPR i2
+                    CALL_EXPR
+                      DECL_REF_EXPR func3
+                      CALL_EXPR
+                        DECL_REF_EXPR func7
+                        DECL_REF_EXPR i3
+                      DECL_REF_EXPR i4
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR arr
+                  INTEGER_LITERAL 0
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR arr
+                  INTEGER_LITERAL 1
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR arr
+                INTEGER_LITERAL 2
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR arr
+              INTEGER_LITERAL 3
+            CALL_EXPR
+              DECL_REF_EXPR func3
+              CALL_EXPR
+                DECL_REF_EXPR func2
+                CALL_EXPR
+                  DECL_REF_EXPR func1
+                  CALL_EXPR
+                    DECL_REF_EXPR func2
+                    CALL_EXPR
+                      DECL_REF_EXPR func3
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR arr
+                        INTEGER_LITERAL 4
+                      CALL_EXPR
+                        DECL_REF_EXPR func5
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR arr
+                          INTEGER_LITERAL 5
+                    CALL_EXPR
+                      DECL_REF_EXPR func5
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR arr
+                        INTEGER_LITERAL 6
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR arr
+                    INTEGER_LITERAL 7
+                  CALL_EXPR
+                    DECL_REF_EXPR func7
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR arr
+                      INTEGER_LITERAL 8
+                CALL_EXPR
+                  DECL_REF_EXPR func5
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR arr
+                    INTEGER_LITERAL 9
+              DECL_REF_EXPR i1
+      RETURN_STMT
+        DECL_REF_EXPR a

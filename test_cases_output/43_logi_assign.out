@@ -1,0 +1,35 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+  DECL_STMT
+    VAR_DECL b
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      DECL_STMT
+        VAR_DECL c
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR a
+            DECL_REF_EXPR b
+          BINARY_OPERATOR !=
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 3
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 0
+      RETURN_STMT
+        DECL_REF_EXPR c

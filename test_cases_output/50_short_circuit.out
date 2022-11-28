@@ -1,0 +1,110 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL g
+      INTEGER_LITERAL 0
+  FUNCTION_DECL func
+    PARM_DECL n
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR g
+        BINARY_OPERATOR +
+          DECL_REF_EXPR g
+          DECL_REF_EXPR n
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR g
+      RETURN_STMT
+        DECL_REF_EXPR g
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR >
+            DECL_REF_EXPR i
+            INTEGER_LITERAL 10
+          CALL_EXPR
+            DECL_REF_EXPR func
+            DECL_REF_EXPR i
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 1
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR >
+            DECL_REF_EXPR i
+            INTEGER_LITERAL 11
+          CALL_EXPR
+            DECL_REF_EXPR func
+            DECL_REF_EXPR i
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 1
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR <=
+            DECL_REF_EXPR i
+            INTEGER_LITERAL 99
+          CALL_EXPR
+            DECL_REF_EXPR func
+            DECL_REF_EXPR i
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 1
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR <=
+            DECL_REF_EXPR i
+            INTEGER_LITERAL 100
+          CALL_EXPR
+            DECL_REF_EXPR func
+            DECL_REF_EXPR i
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 1
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+      IF_STMT
+        BINARY_OPERATOR &&
+          UNARY_OPERATOR !
+            CALL_EXPR
+              DECL_REF_EXPR func
+              INTEGER_LITERAL 99
+          CALL_EXPR
+            DECL_REF_EXPR func
+            INTEGER_LITERAL 100
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 1
+        BINARY_OPERATOR =
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 0
+      RETURN_STMT
+        INTEGER_LITERAL 0

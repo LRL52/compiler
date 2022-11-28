@@ -1,0 +1,78 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+  FUNCTION_DECL f1
+    PARM_DECL b
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 5
+        INTEGER_LITERAL 4000
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 4000
+        INTEGER_LITERAL 3
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR a
+          INTEGER_LITERAL 4095
+        INTEGER_LITERAL 7
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR b
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 4095
+        BINARY_OPERATOR +
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 2216
+          INTEGER_LITERAL 9
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR a
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR a
+            INTEGER_LITERAL 5
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL b
+          INIT_LIST_EXPR
+            INIT_LIST_EXPR
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 1
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 2
+              INTEGER_LITERAL 3
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 4
+              INTEGER_LITERAL 5
+              INTEGER_LITERAL 6
+      DECL_STMT
+        VAR_DECL c
+          INIT_LIST_EXPR
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 1
+              INTEGER_LITERAL 2
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 3
+              INTEGER_LITERAL 4
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        CALL_EXPR
+          DECL_REF_EXPR f1
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 0
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 2
+          INTEGER_LITERAL 0

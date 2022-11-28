@@ -1,0 +1,45 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL doubleWhile
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+      BINARY_OPERATOR =
+        DECL_REF_EXPR i
+        INTEGER_LITERAL 5
+      DECL_STMT
+        VAR_DECL j
+      BINARY_OPERATOR =
+        DECL_REF_EXPR j
+        INTEGER_LITERAL 7
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 100
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 30
+          WHILE_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR j
+              INTEGER_LITERAL 100
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR j
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR j
+                  INTEGER_LITERAL 6
+          BINARY_OPERATOR =
+            DECL_REF_EXPR j
+            BINARY_OPERATOR -
+              DECL_REF_EXPR j
+              INTEGER_LITERAL 100
+      RETURN_STMT
+        DECL_REF_EXPR j
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      RETURN_STMT
+        CALL_EXPR
+          DECL_REF_EXPR doubleWhile

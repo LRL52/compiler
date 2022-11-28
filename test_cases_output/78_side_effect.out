@@ -1,0 +1,104 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL a
+      UNARY_OPERATOR -
+        INTEGER_LITERAL 1
+    VAR_DECL b
+      INTEGER_LITERAL 1
+  FUNCTION_DECL inc_a
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL b
+          DECL_REF_EXPR a
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        BINARY_OPERATOR +
+          DECL_REF_EXPR b
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        DECL_REF_EXPR b
+      RETURN_STMT
+        DECL_REF_EXPR a
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL k
+          INTEGER_LITERAL 5
+      WHILE_STMT
+        BINARY_OPERATOR >=
+          DECL_REF_EXPR k
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          IF_STMT
+            BINARY_OPERATOR &&
+              BINARY_OPERATOR &&
+                CALL_EXPR
+                  DECL_REF_EXPR inc_a
+                CALL_EXPR
+                  DECL_REF_EXPR inc_a
+              CALL_EXPR
+                DECL_REF_EXPR inc_a
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putint
+                DECL_REF_EXPR a
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 32
+              CALL_EXPR
+                DECL_REF_EXPR putint
+                DECL_REF_EXPR b
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+          IF_STMT
+            BINARY_OPERATOR ||
+              BINARY_OPERATOR <
+                CALL_EXPR
+                  DECL_REF_EXPR inc_a
+                INTEGER_LITERAL 14
+              BINARY_OPERATOR &&
+                CALL_EXPR
+                  DECL_REF_EXPR inc_a
+                BINARY_OPERATOR +
+                  BINARY_OPERATOR -
+                    CALL_EXPR
+                      DECL_REF_EXPR inc_a
+                    CALL_EXPR
+                      DECL_REF_EXPR inc_a
+                  INTEGER_LITERAL 1
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR putint
+                DECL_REF_EXPR a
+              CALL_EXPR
+                DECL_REF_EXPR putch
+                INTEGER_LITERAL 10
+              BINARY_OPERATOR =
+                DECL_REF_EXPR b
+                BINARY_OPERATOR *
+                  DECL_REF_EXPR b
+                  INTEGER_LITERAL 2
+            COMPOUND_STMT
+              CALL_EXPR
+                DECL_REF_EXPR inc_a
+          BINARY_OPERATOR =
+            DECL_REF_EXPR k
+            BINARY_OPERATOR -
+              DECL_REF_EXPR k
+              INTEGER_LITERAL 1
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 32
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        DECL_REF_EXPR a

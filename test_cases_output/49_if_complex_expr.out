@@ -1,0 +1,86 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+      DECL_STMT
+        VAR_DECL b
+      DECL_STMT
+        VAR_DECL c
+      DECL_STMT
+        VAR_DECL d
+      DECL_STMT
+        VAR_DECL result
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a
+        INTEGER_LITERAL 5
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        INTEGER_LITERAL 5
+      BINARY_OPERATOR =
+        DECL_REF_EXPR c
+        INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR d
+        UNARY_OPERATOR -
+          INTEGER_LITERAL 2
+      BINARY_OPERATOR =
+        DECL_REF_EXPR result
+        INTEGER_LITERAL 2
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR <
+            BINARY_OPERATOR /
+              BINARY_OPERATOR *
+                DECL_REF_EXPR d
+                INTEGER_LITERAL 1
+              INTEGER_LITERAL 2
+            INTEGER_LITERAL 0
+          BINARY_OPERATOR &&
+            BINARY_OPERATOR !=
+              BINARY_OPERATOR -
+                DECL_REF_EXPR a
+                DECL_REF_EXPR b
+              INTEGER_LITERAL 0
+            BINARY_OPERATOR !=
+              BINARY_OPERATOR %
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR c
+                  INTEGER_LITERAL 3
+                INTEGER_LITERAL 2
+              INTEGER_LITERAL 0
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR result
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR <
+            BINARY_OPERATOR +
+              BINARY_OPERATOR %
+                DECL_REF_EXPR d
+                INTEGER_LITERAL 2
+              INTEGER_LITERAL 67
+            INTEGER_LITERAL 0
+          BINARY_OPERATOR &&
+            BINARY_OPERATOR !=
+              BINARY_OPERATOR -
+                DECL_REF_EXPR a
+                DECL_REF_EXPR b
+              INTEGER_LITERAL 0
+            BINARY_OPERATOR !=
+              BINARY_OPERATOR %
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR c
+                  INTEGER_LITERAL 2
+                INTEGER_LITERAL 2
+              INTEGER_LITERAL 0
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR result
+            INTEGER_LITERAL 4
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR result
+      RETURN_STMT
+        INTEGER_LITERAL 0

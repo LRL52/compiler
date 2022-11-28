@@ -1,0 +1,40 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL N
+      UNARY_OPERATOR -
+        INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL arr
+      INIT_LIST_EXPR
+        INTEGER_LITERAL 1
+        INTEGER_LITERAL 2
+        INTEGER_LITERAL 33
+        INTEGER_LITERAL 4
+        INTEGER_LITERAL 5
+        INTEGER_LITERAL 6
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+        VAR_DECL sum
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          INTEGER_LITERAL 6
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR sum
+            BINARY_OPERATOR +
+              DECL_REF_EXPR sum
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR arr
+                DECL_REF_EXPR i
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR sum

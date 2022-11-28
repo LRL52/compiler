@@ -1,0 +1,337 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL n
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a0
+      DECL_STMT
+        VAR_DECL a1
+      DECL_STMT
+        VAR_DECL a2
+      DECL_STMT
+        VAR_DECL a3
+      DECL_STMT
+        VAR_DECL a4
+      DECL_STMT
+        VAR_DECL a5
+      DECL_STMT
+        VAR_DECL a6
+      DECL_STMT
+        VAR_DECL a7
+      DECL_STMT
+        VAR_DECL a8
+      DECL_STMT
+        VAR_DECL a9
+      DECL_STMT
+        VAR_DECL a10
+      DECL_STMT
+        VAR_DECL a11
+      DECL_STMT
+        VAR_DECL a12
+      DECL_STMT
+        VAR_DECL a13
+      DECL_STMT
+        VAR_DECL a14
+      DECL_STMT
+        VAR_DECL a15
+      DECL_STMT
+        VAR_DECL a16
+      DECL_STMT
+        VAR_DECL a17
+      DECL_STMT
+        VAR_DECL a18
+      DECL_STMT
+        VAR_DECL a19
+      DECL_STMT
+        VAR_DECL a20
+      DECL_STMT
+        VAR_DECL a21
+      DECL_STMT
+        VAR_DECL a22
+      DECL_STMT
+        VAR_DECL a23
+      DECL_STMT
+        VAR_DECL a24
+      DECL_STMT
+        VAR_DECL a25
+      DECL_STMT
+        VAR_DECL a26
+      DECL_STMT
+        VAR_DECL a27
+      DECL_STMT
+        VAR_DECL a28
+      DECL_STMT
+        VAR_DECL a29
+      DECL_STMT
+        VAR_DECL b
+      BINARY_OPERATOR =
+        DECL_REF_EXPR b
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      WHILE_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR b
+          INTEGER_LITERAL 5
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR b
+            BINARY_OPERATOR +
+              DECL_REF_EXPR b
+              INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a0
+        INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a1
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a0
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a2
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a1
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a3
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a2
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a4
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a3
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a5
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a4
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a6
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a5
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a7
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a6
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a8
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a7
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a9
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a8
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a10
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a9
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a11
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a10
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a12
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a11
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a13
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a12
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a14
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a13
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a15
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a14
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a16
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a15
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a17
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a16
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a18
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a17
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a19
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a18
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a20
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a19
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a21
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a20
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a22
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a21
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a23
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a22
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a24
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a23
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a25
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a24
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a26
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a25
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a27
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a26
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a28
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a27
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        DECL_REF_EXPR a29
+        BINARY_OPERATOR +
+          DECL_REF_EXPR a28
+          INTEGER_LITERAL 1
+      DECL_STMT
+        VAR_DECL t
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a0
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a1
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a2
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a3
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a4
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a5
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a6
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a7
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a8
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a9
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a10
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a11
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a12
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a13
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a14
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a15
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a16
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a17
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a18
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a19
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a20
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a21
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a22
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a23
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a24
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a25
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a26
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a27
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a28
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR a29
+      DECL_STMT
+        VAR_DECL newline
+      BINARY_OPERATOR =
+        DECL_REF_EXPR newline
+        INTEGER_LITERAL 10
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        DECL_REF_EXPR newline
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        DECL_REF_EXPR b
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        DECL_REF_EXPR newline
+      RETURN_STMT
+        DECL_REF_EXPR a25

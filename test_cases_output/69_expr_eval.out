@@ -1,0 +1,411 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL TOKEN_NUM
+      INTEGER_LITERAL 0
+    VAR_DECL TOKEN_OTHER
+      INTEGER_LITERAL 1
+  DECL_STMT
+    VAR_DECL last_char
+      INTEGER_LITERAL 32
+    VAR_DECL num
+    VAR_DECL other
+  DECL_STMT
+    VAR_DECL cur_token
+  FUNCTION_DECL next_char
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        DECL_REF_EXPR last_char
+        CALL_EXPR
+          DECL_REF_EXPR getch
+      RETURN_STMT
+        DECL_REF_EXPR last_char
+  FUNCTION_DECL is_space
+    PARM_DECL c
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 32
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 10
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 0
+  FUNCTION_DECL is_num
+    PARM_DECL c
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR &&
+          BINARY_OPERATOR >=
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 48
+          BINARY_OPERATOR <=
+            DECL_REF_EXPR c
+            INTEGER_LITERAL 57
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 1
+        COMPOUND_STMT
+          RETURN_STMT
+            INTEGER_LITERAL 0
+  FUNCTION_DECL next_token
+    COMPOUND_STMT
+      WHILE_STMT
+        CALL_EXPR
+          DECL_REF_EXPR is_space
+          DECL_REF_EXPR last_char
+        CALL_EXPR
+          DECL_REF_EXPR next_char
+      IF_STMT
+        CALL_EXPR
+          DECL_REF_EXPR is_num
+          DECL_REF_EXPR last_char
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR num
+            BINARY_OPERATOR -
+              DECL_REF_EXPR last_char
+              INTEGER_LITERAL 48
+          WHILE_STMT
+            CALL_EXPR
+              DECL_REF_EXPR is_num
+              CALL_EXPR
+                DECL_REF_EXPR next_char
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR num
+                BINARY_OPERATOR -
+                  BINARY_OPERATOR +
+                    BINARY_OPERATOR *
+                      DECL_REF_EXPR num
+                      INTEGER_LITERAL 10
+                    DECL_REF_EXPR last_char
+                  INTEGER_LITERAL 48
+          BINARY_OPERATOR =
+            DECL_REF_EXPR cur_token
+            DECL_REF_EXPR TOKEN_NUM
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR other
+            DECL_REF_EXPR last_char
+          CALL_EXPR
+            DECL_REF_EXPR next_char
+          BINARY_OPERATOR =
+            DECL_REF_EXPR cur_token
+            DECL_REF_EXPR TOKEN_OTHER
+      RETURN_STMT
+        DECL_REF_EXPR cur_token
+  FUNCTION_DECL panic
+    COMPOUND_STMT
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 112
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 97
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 110
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 105
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 99
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 33
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        UNARY_OPERATOR -
+          INTEGER_LITERAL 1
+  FUNCTION_DECL get_op_prec
+    PARM_DECL op
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR op
+            INTEGER_LITERAL 43
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR op
+            INTEGER_LITERAL 45
+        RETURN_STMT
+          INTEGER_LITERAL 10
+      IF_STMT
+        BINARY_OPERATOR ||
+          BINARY_OPERATOR ||
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR op
+              INTEGER_LITERAL 42
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR op
+              INTEGER_LITERAL 47
+          BINARY_OPERATOR ==
+            DECL_REF_EXPR op
+            INTEGER_LITERAL 37
+        RETURN_STMT
+          INTEGER_LITERAL 20
+      RETURN_STMT
+        INTEGER_LITERAL 0
+  FUNCTION_DECL stack_push
+    PARM_DECL s
+    PARM_DECL v
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR s
+          INTEGER_LITERAL 0
+        BINARY_OPERATOR +
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR s
+            INTEGER_LITERAL 0
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR s
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR s
+            INTEGER_LITERAL 0
+        DECL_REF_EXPR v
+  FUNCTION_DECL stack_pop
+    PARM_DECL s
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL last
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR s
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR s
+              INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR s
+          INTEGER_LITERAL 0
+        BINARY_OPERATOR -
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR s
+            INTEGER_LITERAL 0
+          INTEGER_LITERAL 1
+      RETURN_STMT
+        DECL_REF_EXPR last
+  FUNCTION_DECL stack_peek
+    PARM_DECL s
+    COMPOUND_STMT
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR s
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR s
+            INTEGER_LITERAL 0
+  FUNCTION_DECL stack_size
+    PARM_DECL s
+    COMPOUND_STMT
+      RETURN_STMT
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR s
+          INTEGER_LITERAL 0
+  FUNCTION_DECL eval_op
+    PARM_DECL op
+    PARM_DECL lhs
+    PARM_DECL rhs
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR op
+          INTEGER_LITERAL 43
+        RETURN_STMT
+          BINARY_OPERATOR +
+            DECL_REF_EXPR lhs
+            DECL_REF_EXPR rhs
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR op
+          INTEGER_LITERAL 45
+        RETURN_STMT
+          BINARY_OPERATOR -
+            DECL_REF_EXPR lhs
+            DECL_REF_EXPR rhs
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR op
+          INTEGER_LITERAL 42
+        RETURN_STMT
+          BINARY_OPERATOR *
+            DECL_REF_EXPR lhs
+            DECL_REF_EXPR rhs
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR op
+          INTEGER_LITERAL 47
+        RETURN_STMT
+          BINARY_OPERATOR /
+            DECL_REF_EXPR lhs
+            DECL_REF_EXPR rhs
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR op
+          INTEGER_LITERAL 37
+        RETURN_STMT
+          BINARY_OPERATOR %
+            DECL_REF_EXPR lhs
+            DECL_REF_EXPR rhs
+      RETURN_STMT
+        INTEGER_LITERAL 0
+  FUNCTION_DECL eval
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL oprs
+          INIT_LIST_EXPR
+        VAR_DECL ops
+          INIT_LIST_EXPR
+      IF_STMT
+        BINARY_OPERATOR !=
+          DECL_REF_EXPR cur_token
+          DECL_REF_EXPR TOKEN_NUM
+        RETURN_STMT
+          CALL_EXPR
+            DECL_REF_EXPR panic
+      CALL_EXPR
+        DECL_REF_EXPR stack_push
+        DECL_REF_EXPR oprs
+        DECL_REF_EXPR num
+      CALL_EXPR
+        DECL_REF_EXPR next_token
+      WHILE_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR cur_token
+          DECL_REF_EXPR TOKEN_OTHER
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL op
+              DECL_REF_EXPR other
+          IF_STMT
+            UNARY_OPERATOR !
+              CALL_EXPR
+                DECL_REF_EXPR get_op_prec
+                DECL_REF_EXPR op
+            BREAK_STMT
+          CALL_EXPR
+            DECL_REF_EXPR next_token
+          WHILE_STMT
+            BINARY_OPERATOR &&
+              CALL_EXPR
+                DECL_REF_EXPR stack_size
+                DECL_REF_EXPR ops
+              BINARY_OPERATOR >=
+                CALL_EXPR
+                  DECL_REF_EXPR get_op_prec
+                  CALL_EXPR
+                    DECL_REF_EXPR stack_peek
+                    DECL_REF_EXPR ops
+                CALL_EXPR
+                  DECL_REF_EXPR get_op_prec
+                  DECL_REF_EXPR op
+            COMPOUND_STMT
+              DECL_STMT
+                VAR_DECL cur_op
+                  CALL_EXPR
+                    DECL_REF_EXPR stack_pop
+                    DECL_REF_EXPR ops
+              DECL_STMT
+                VAR_DECL rhs
+                  CALL_EXPR
+                    DECL_REF_EXPR stack_pop
+                    DECL_REF_EXPR oprs
+                VAR_DECL lhs
+                  CALL_EXPR
+                    DECL_REF_EXPR stack_pop
+                    DECL_REF_EXPR oprs
+              CALL_EXPR
+                DECL_REF_EXPR stack_push
+                DECL_REF_EXPR oprs
+                CALL_EXPR
+                  DECL_REF_EXPR eval_op
+                  DECL_REF_EXPR cur_op
+                  DECL_REF_EXPR lhs
+                  DECL_REF_EXPR rhs
+          CALL_EXPR
+            DECL_REF_EXPR stack_push
+            DECL_REF_EXPR ops
+            DECL_REF_EXPR op
+          IF_STMT
+            BINARY_OPERATOR !=
+              DECL_REF_EXPR cur_token
+              DECL_REF_EXPR TOKEN_NUM
+            RETURN_STMT
+              CALL_EXPR
+                DECL_REF_EXPR panic
+          CALL_EXPR
+            DECL_REF_EXPR stack_push
+            DECL_REF_EXPR oprs
+            DECL_REF_EXPR num
+          CALL_EXPR
+            DECL_REF_EXPR next_token
+      CALL_EXPR
+        DECL_REF_EXPR next_token
+      WHILE_STMT
+        CALL_EXPR
+          DECL_REF_EXPR stack_size
+          DECL_REF_EXPR ops
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL cur_op
+              CALL_EXPR
+                DECL_REF_EXPR stack_pop
+                DECL_REF_EXPR ops
+          DECL_STMT
+            VAR_DECL rhs
+              CALL_EXPR
+                DECL_REF_EXPR stack_pop
+                DECL_REF_EXPR oprs
+            VAR_DECL lhs
+              CALL_EXPR
+                DECL_REF_EXPR stack_pop
+                DECL_REF_EXPR oprs
+          CALL_EXPR
+            DECL_REF_EXPR stack_push
+            DECL_REF_EXPR oprs
+            CALL_EXPR
+              DECL_REF_EXPR eval_op
+              DECL_REF_EXPR cur_op
+              DECL_REF_EXPR lhs
+              DECL_REF_EXPR rhs
+      RETURN_STMT
+        CALL_EXPR
+          DECL_REF_EXPR stack_peek
+          DECL_REF_EXPR oprs
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL count
+          CALL_EXPR
+            DECL_REF_EXPR getint
+      CALL_EXPR
+        DECL_REF_EXPR getch
+      CALL_EXPR
+        DECL_REF_EXPR next_token
+      WHILE_STMT
+        DECL_REF_EXPR count
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            CALL_EXPR
+              DECL_REF_EXPR eval
+          CALL_EXPR
+            DECL_REF_EXPR putch
+            INTEGER_LITERAL 10
+          BINARY_OPERATOR =
+            DECL_REF_EXPR count
+            BINARY_OPERATOR -
+              DECL_REF_EXPR count
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0

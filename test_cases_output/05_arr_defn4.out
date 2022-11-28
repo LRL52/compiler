@@ -1,0 +1,100 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL a
+          INIT_LIST_EXPR
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 1
+              INTEGER_LITERAL 2
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 3
+              INTEGER_LITERAL 4
+            INIT_LIST_EXPR
+            INTEGER_LITERAL 7
+      DECL_STMT
+        VAR_DECL N
+          INTEGER_LITERAL 3
+      DECL_STMT
+        VAR_DECL b
+          INIT_LIST_EXPR
+      DECL_STMT
+        VAR_DECL c
+          INIT_LIST_EXPR
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 2
+            INTEGER_LITERAL 3
+            INTEGER_LITERAL 4
+            INTEGER_LITERAL 5
+            INTEGER_LITERAL 6
+            INTEGER_LITERAL 7
+            INTEGER_LITERAL 8
+      DECL_STMT
+        VAR_DECL d
+          INIT_LIST_EXPR
+            INTEGER_LITERAL 1
+            INTEGER_LITERAL 2
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 3
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 5
+            ARRAY_SUBSCRIPT_EXPR
+              ARRAY_SUBSCRIPT_EXPR
+                DECL_REF_EXPR a
+                INTEGER_LITERAL 3
+              INTEGER_LITERAL 0
+            INTEGER_LITERAL 8
+      DECL_STMT
+        VAR_DECL e
+          INIT_LIST_EXPR
+            INIT_LIST_EXPR
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR d
+                  INTEGER_LITERAL 2
+                INTEGER_LITERAL 1
+              INIT_LIST_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR c
+                    INTEGER_LITERAL 2
+                  INTEGER_LITERAL 1
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 3
+              INTEGER_LITERAL 4
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 5
+              INTEGER_LITERAL 6
+            INIT_LIST_EXPR
+              INTEGER_LITERAL 7
+              INTEGER_LITERAL 8
+      RETURN_STMT
+        BINARY_OPERATOR +
+          BINARY_OPERATOR +
+            BINARY_OPERATOR +
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR e
+                    INTEGER_LITERAL 3
+                  INTEGER_LITERAL 1
+                INTEGER_LITERAL 0
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR e
+                    INTEGER_LITERAL 0
+                  INTEGER_LITERAL 0
+                INTEGER_LITERAL 0
+            ARRAY_SUBSCRIPT_EXPR
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR e
+                  INTEGER_LITERAL 0
+                INTEGER_LITERAL 1
+              INTEGER_LITERAL 0
+          ARRAY_SUBSCRIPT_EXPR
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR d
+              INTEGER_LITERAL 3
+            INTEGER_LITERAL 0

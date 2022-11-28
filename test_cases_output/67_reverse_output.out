@@ -1,0 +1,41 @@
+TRANSLATION_UNIT
+  FUNCTION_DECL reverse
+    PARM_DECL n
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL next
+      IF_STMT
+        BINARY_OPERATOR <=
+          DECL_REF_EXPR n
+          INTEGER_LITERAL 1
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR next
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR next
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            DECL_REF_EXPR next
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          CALL_EXPR
+            DECL_REF_EXPR reverse
+            BINARY_OPERATOR -
+              DECL_REF_EXPR n
+              INTEGER_LITERAL 1
+          CALL_EXPR
+            DECL_REF_EXPR putint
+            DECL_REF_EXPR next
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 200
+      CALL_EXPR
+        DECL_REF_EXPR reverse
+        DECL_REF_EXPR i
+      RETURN_STMT
+        INTEGER_LITERAL 0

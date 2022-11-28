@@ -1,0 +1,353 @@
+TRANSLATION_UNIT
+  DECL_STMT
+    VAR_DECL INF
+      INTEGER_LITERAL 0
+  DECL_STMT
+    VAR_DECL size
+  DECL_STMT
+    VAR_DECL to
+  DECL_STMT
+    VAR_DECL cap
+  DECL_STMT
+    VAR_DECL rev
+  DECL_STMT
+    VAR_DECL used
+  FUNCTION_DECL my_memset
+    PARM_DECL arr
+    PARM_DECL val
+    PARM_DECL n
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          DECL_REF_EXPR n
+        COMPOUND_STMT
+          BINARY_OPERATOR =
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR arr
+              DECL_REF_EXPR i
+            DECL_REF_EXPR val
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+  FUNCTION_DECL add_node
+    PARM_DECL u
+    PARM_DECL v
+    PARM_DECL c
+    COMPOUND_STMT
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR to
+            DECL_REF_EXPR u
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR u
+        DECL_REF_EXPR v
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR cap
+            DECL_REF_EXPR u
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR u
+        DECL_REF_EXPR c
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR rev
+            DECL_REF_EXPR u
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR u
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR size
+          DECL_REF_EXPR v
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR to
+            DECL_REF_EXPR v
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR v
+        DECL_REF_EXPR u
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR cap
+            DECL_REF_EXPR v
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR v
+        INTEGER_LITERAL 0
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR rev
+            DECL_REF_EXPR v
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR v
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR size
+          DECL_REF_EXPR u
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR size
+          DECL_REF_EXPR u
+        BINARY_OPERATOR +
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR u
+          INTEGER_LITERAL 1
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR size
+          DECL_REF_EXPR v
+        BINARY_OPERATOR +
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR v
+          INTEGER_LITERAL 1
+  FUNCTION_DECL dfs
+    PARM_DECL s
+    PARM_DECL t
+    PARM_DECL f
+    COMPOUND_STMT
+      IF_STMT
+        BINARY_OPERATOR ==
+          DECL_REF_EXPR s
+          DECL_REF_EXPR t
+        RETURN_STMT
+          DECL_REF_EXPR f
+      BINARY_OPERATOR =
+        ARRAY_SUBSCRIPT_EXPR
+          DECL_REF_EXPR used
+          DECL_REF_EXPR s
+        INTEGER_LITERAL 1
+      DECL_STMT
+        VAR_DECL i
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        BINARY_OPERATOR <
+          DECL_REF_EXPR i
+          ARRAY_SUBSCRIPT_EXPR
+            DECL_REF_EXPR size
+            DECL_REF_EXPR s
+        COMPOUND_STMT
+          IF_STMT
+            ARRAY_SUBSCRIPT_EXPR
+              DECL_REF_EXPR used
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR to
+                  DECL_REF_EXPR s
+                DECL_REF_EXPR i
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR i
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+              CONTINUE_STMT
+          IF_STMT
+            BINARY_OPERATOR <=
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR cap
+                  DECL_REF_EXPR s
+                DECL_REF_EXPR i
+              INTEGER_LITERAL 0
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                DECL_REF_EXPR i
+                BINARY_OPERATOR +
+                  DECL_REF_EXPR i
+                  INTEGER_LITERAL 1
+              CONTINUE_STMT
+          DECL_STMT
+            VAR_DECL min_f
+          IF_STMT
+            BINARY_OPERATOR <
+              DECL_REF_EXPR f
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR cap
+                  DECL_REF_EXPR s
+                DECL_REF_EXPR i
+            BINARY_OPERATOR =
+              DECL_REF_EXPR min_f
+              DECL_REF_EXPR f
+            BINARY_OPERATOR =
+              DECL_REF_EXPR min_f
+              ARRAY_SUBSCRIPT_EXPR
+                ARRAY_SUBSCRIPT_EXPR
+                  DECL_REF_EXPR cap
+                  DECL_REF_EXPR s
+                DECL_REF_EXPR i
+          DECL_STMT
+            VAR_DECL d
+              CALL_EXPR
+                DECL_REF_EXPR dfs
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR to
+                    DECL_REF_EXPR s
+                  DECL_REF_EXPR i
+                DECL_REF_EXPR t
+                DECL_REF_EXPR min_f
+          IF_STMT
+            BINARY_OPERATOR >
+              DECL_REF_EXPR d
+              INTEGER_LITERAL 0
+            COMPOUND_STMT
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR cap
+                    DECL_REF_EXPR s
+                  DECL_REF_EXPR i
+                BINARY_OPERATOR -
+                  ARRAY_SUBSCRIPT_EXPR
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR cap
+                      DECL_REF_EXPR s
+                    DECL_REF_EXPR i
+                  DECL_REF_EXPR d
+              BINARY_OPERATOR =
+                ARRAY_SUBSCRIPT_EXPR
+                  ARRAY_SUBSCRIPT_EXPR
+                    DECL_REF_EXPR cap
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR to
+                        DECL_REF_EXPR s
+                      DECL_REF_EXPR i
+                  ARRAY_SUBSCRIPT_EXPR
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR rev
+                      DECL_REF_EXPR s
+                    DECL_REF_EXPR i
+                BINARY_OPERATOR +
+                  ARRAY_SUBSCRIPT_EXPR
+                    ARRAY_SUBSCRIPT_EXPR
+                      DECL_REF_EXPR cap
+                      ARRAY_SUBSCRIPT_EXPR
+                        ARRAY_SUBSCRIPT_EXPR
+                          DECL_REF_EXPR to
+                          DECL_REF_EXPR s
+                        DECL_REF_EXPR i
+                    ARRAY_SUBSCRIPT_EXPR
+                      ARRAY_SUBSCRIPT_EXPR
+                        DECL_REF_EXPR rev
+                        DECL_REF_EXPR s
+                      DECL_REF_EXPR i
+                  DECL_REF_EXPR d
+              RETURN_STMT
+                DECL_REF_EXPR d
+          BINARY_OPERATOR =
+            DECL_REF_EXPR i
+            BINARY_OPERATOR +
+              DECL_REF_EXPR i
+              INTEGER_LITERAL 1
+      RETURN_STMT
+        INTEGER_LITERAL 0
+  FUNCTION_DECL max_flow
+    PARM_DECL s
+    PARM_DECL t
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL flow
+          INTEGER_LITERAL 0
+      WHILE_STMT
+        INTEGER_LITERAL 1
+        COMPOUND_STMT
+          CALL_EXPR
+            DECL_REF_EXPR my_memset
+            DECL_REF_EXPR used
+            INTEGER_LITERAL 0
+            INTEGER_LITERAL 10
+          DECL_STMT
+            VAR_DECL f
+              CALL_EXPR
+                DECL_REF_EXPR dfs
+                DECL_REF_EXPR s
+                DECL_REF_EXPR t
+                DECL_REF_EXPR INF
+          IF_STMT
+            BINARY_OPERATOR ==
+              DECL_REF_EXPR f
+              INTEGER_LITERAL 0
+            RETURN_STMT
+              DECL_REF_EXPR flow
+          BINARY_OPERATOR =
+            DECL_REF_EXPR flow
+            BINARY_OPERATOR +
+              DECL_REF_EXPR flow
+              DECL_REF_EXPR f
+  FUNCTION_DECL main
+    COMPOUND_STMT
+      DECL_STMT
+        VAR_DECL V
+        VAR_DECL E
+      BINARY_OPERATOR =
+        DECL_REF_EXPR V
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      BINARY_OPERATOR =
+        DECL_REF_EXPR E
+        CALL_EXPR
+          DECL_REF_EXPR getint
+      CALL_EXPR
+        DECL_REF_EXPR my_memset
+        DECL_REF_EXPR size
+        INTEGER_LITERAL 0
+        INTEGER_LITERAL 10
+      WHILE_STMT
+        BINARY_OPERATOR >
+          DECL_REF_EXPR E
+          INTEGER_LITERAL 0
+        COMPOUND_STMT
+          DECL_STMT
+            VAR_DECL u
+            VAR_DECL v
+          BINARY_OPERATOR =
+            DECL_REF_EXPR u
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          BINARY_OPERATOR =
+            DECL_REF_EXPR v
+            CALL_EXPR
+              DECL_REF_EXPR getint
+          DECL_STMT
+            VAR_DECL c
+              CALL_EXPR
+                DECL_REF_EXPR getint
+          CALL_EXPR
+            DECL_REF_EXPR add_node
+            DECL_REF_EXPR u
+            DECL_REF_EXPR v
+            DECL_REF_EXPR c
+          BINARY_OPERATOR =
+            DECL_REF_EXPR E
+            BINARY_OPERATOR -
+              DECL_REF_EXPR E
+              INTEGER_LITERAL 1
+      CALL_EXPR
+        DECL_REF_EXPR putint
+        CALL_EXPR
+          DECL_REF_EXPR max_flow
+          INTEGER_LITERAL 1
+          DECL_REF_EXPR V
+      CALL_EXPR
+        DECL_REF_EXPR putch
+        INTEGER_LITERAL 10
+      RETURN_STMT
+        INTEGER_LITERAL 0
