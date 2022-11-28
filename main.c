@@ -325,8 +325,8 @@ past Stmt() { //非空
 }
 
 past BlockItem() { //非空
-	past ret = Stmt();
-	return ret;
+	if(tok == Y_CONST || Type(tok)) return Decl();
+	else return Stmt();
 }
 
 past BlockItems() { //非空
@@ -334,8 +334,8 @@ past BlockItems() { //非空
 	ret->left = BlockItem();
 	assert(ret->left != NULL);
 
-	past p = ret->left, nxt;
-	while(tok != Y_RBRACKET) {
+	past p = ret->left;
+	while(tok != Y_RBRACKET) { //人脑智慧判断BlockItems是否结束
 		p->next = BlockItem();
 		assert(p->next != NULL);
 		p = p->next;
@@ -350,6 +350,246 @@ past Block() {
     past ret = BlockItems();
 	assert(tok == Y_RBRACKET);
 	advance();
+	return ret;
+}
+
+past FuncParam() {
+	assert(Type(tok)); advance();
+	assert(tok == Y_ID);
+	past ret = NewNode(NULL, PARM_DECL, NULL);
+	ret->svalue = s[top]; advance();
+	int _top = top;
+	if(tok != Y_LSQUARE) return ret;
+	advance();
+	if(tok == Y_RSQUARE) {
+		advance();
+		if(tok != Y_LSQUARE) return ret;
+		past t = ArraySubscripts(); Free(t);
+	} else {
+		top = _top, tok = stk[top];
+		past t = ArraySubscripts(); Free(t);
+	}
+	return ret;
+}
+
+past FuncParams() {
+	past ret = FuncParam(); assert(ret != NULL);
+	past p = ret;
+	while(1) {
+		if(tok != Y_COMMA) return ret;
+		advance();
+		p->next = FuncParam();
+		assert(p->next != NULL);
+		p = p->next;
+	}
+}
+
+past FuncDef() {
+	assert(Type(tok)); advance();
+	assert(tok == Y_ID);
+	past ret = NewNode(NULL, FUNCTION_DECL, NULL);
+	ret->svalue = s[top]; advance();
+	assert(tok == Y_LPAR); advance();
+	if(tok == Y_RPAR) {
+		advance();
+		ret->right = Block(); assert(ret->right != NULL);
+	} else {
+		ret->left = FuncParams(); assert(ret->left != NULL);
+		assert(tok == Y_RPAR); advance();
+		ret->right = Block(); assert(ret->right != NULL);
+	}
+	return ret;
+}
+
+//InitVals 产生式被人脑智慧优化了，不需要
+past InitVal() {
+	past ret = NULL;
+	if(tok == Y_LBRACKET) {
+		advance();
+		ret = NewNode(NULL, INIT_LIST_EXPR, NULL);
+		if(tok == Y_RBRACKET) advance();
+		else {
+			ret->left = InitVal(); assert(ret->left != NULL);
+			past p = ret->left;
+			while(1) {
+				if(tok != Y_COMMA) break;
+				advance();
+				p->next = InitVal(); assert(p->next != NULL);
+				p = p->next;
+			}
+			p->next = NULL;
+			assert(tok == Y_RBRACKET);
+			advance();
+		}
+	} else {
+		ret = Exp();
+		assert(ret != NULL);
+	}
+	return ret;
+}
+
+past VarDef() {
+	assert(tok == Y_ID);
+	past ret = NewNode(NULL, VAR_DECL, NULL);
+	ret->svalue = s[top]; advance();
+	if(tok == Y_ASSIGN) {
+		advance();
+		ret->left = InitVal(); assert(ret->left != NULL);
+	} else
+	if(tok == Y_LSQUARE) {
+		past t = ConstExps(); Free(t);
+		if(tok == Y_ASSIGN) {
+			advance();
+			ret->left = InitVal(); assert(ret->left != NULL);
+		}
+	}
+	return ret;
+}
+
+//VarDecls 产生式被人脑智慧优化了，不需要
+past VarDecl() {
+	assert(Type(tok)); advance();
+	past ret = NewNode(NULL, DECL_STMT, NULL);
+	ret->left = VarDef(); assert(ret->left != NULL);
+	past p = ret->left;
+	while(1) {
+		assert(tok == Y_SEMICOLON || tok == Y_COMMA);
+		if(tok == Y_SEMICOLON) { advance(); break; }
+		advance();
+		p->next = VarDef();
+		assert(p->next != NULL);
+		p = p->next;
+	}
+	p->next = NULL;
+	return ret;
+}
+
+//ConstInitVals 产生式被人脑智慧优化了，不需要
+past ConstInitVal() {
+	past ret = NULL;
+	if(tok == Y_LBRACKET) {
+		advance();
+		ret = NewNode(NULL, INIT_LIST_EXPR, NULL);
+		if(tok == Y_RBRACKET) advance();
+		else {
+			ret->left = ConstInitVal(); assert(ret->left != NULL);
+			past p = ret->left;
+			while(1) {
+				if(tok != Y_COMMA) break;
+				advance();
+				p->next = ConstInitVal(); assert(p->next != NULL);
+				p = p->next;
+			}
+			p->next = NULL;
+			assert(tok == Y_RBRACKET);
+			advance();
+		}
+	} else {
+		ret = ConstExp();
+		assert(ret != NULL);
+	}
+	return ret;
+}
+
+past ConstExp() {
+	return AddExp();
+}
+
+past ConstExps() {
+	assert(tok == Y_LSQUARE);
+	advance();
+	past ret = NewNode(NULL, ARRAY_SUBSCRIPT_EXPR, NULL);
+	ret->right = ConstExp();
+	assert(ret->right != NULL);
+	assert(tok == Y_RSQUARE);
+	advance();
+	while(1) {
+		if(tok != Y_LSQUARE) return ret;
+		advance();
+		past t = NewNode(ret, ARRAY_SUBSCRIPT_EXPR, NULL);
+		t->right = ConstExp();
+		assert(t->right != NULL);
+		assert(tok == Y_RSQUARE);
+		advance();
+		ret = t;
+	}
+}
+
+past ConstDef() {
+	assert(tok == Y_ID);
+	past ret = NewNode(NULL, VAR_DECL, NULL);
+	ret->svalue = s[top]; advance();
+	if(tok == Y_ASSIGN) {
+		advance();
+		ret->left = ConstInitVal();
+	} else {
+		past t = ConstExps(); Free(t);
+		assert(tok == Y_ASSIGN); advance();
+		ret->left = ConstInitVal();
+	}
+	assert(ret->left != NULL);
+	return ret; 
+}
+
+//ConstDefs 产生式被人脑智慧优化了，不需要
+past ConstDecl() {
+	assert(tok == Y_CONST); advance();
+	assert(Type(tok)); advance();
+	past ret = NewNode(NULL, DECL_STMT, NULL);
+	ret->left = ConstDef(); assert(ret->left != NULL);
+	past p = ret->left;
+	while(1) {
+		assert(tok == Y_SEMICOLON || tok == Y_COMMA);
+		if(tok == Y_SEMICOLON) { advance(); break; }
+		advance();
+		p->next = ConstDef();
+		assert(p->next != NULL);
+		p = p->next;
+	}
+	p->next = NULL;
+	return ret;
+}
+
+past Decl() {
+	past ret = NULL;
+	if(tok == Y_CONST) ret = ConstDecl();
+	else ret = VarDecl();
+	assert(ret != NULL);
+	return ret; 
+}
+
+int Type(enum yytokentype cur) {
+	return cur == Y_INT || cur == Y_FLOAT || cur == Y_VOID;
+}
+
+past _CompUnit() {
+	past ret = NULL; int _top = top;
+	if(tok == Y_CONST) {
+		ret = Decl();
+	} else {
+		assert(Type(tok)); advance();
+		assert(tok == Y_ID); advance();
+		int _tok = tok; top = _top, tok = stk[top];
+		if(_tok == Y_LPAR) {
+			ret = FuncDef();
+		} else {
+			ret = Decl();
+		}
+	}
+	assert(ret != NULL);
+	return ret;
+}
+
+past CompUnit() {
+	past ret = NewNode(NULL, TRANSLATION_UNIT, NULL);
+	ret->left = _CompUnit(); assert(ret != NULL);
+	past p = ret->left;
+	while(tok != 0) {
+		p->next = _CompUnit();
+		assert(p->next != NULL);
+		p = p->next;
+	}
+	p->next = NULL;
 	return ret;
 }
 
@@ -369,6 +609,12 @@ void print(past cur) {
 		case WHILE_STMT: printf("WHILE_STMT"); break;
 		case CONTINUE_STMT: printf("CONTINUE_STMT"); break;
 		case BREAK_STMT: printf("BREAK_STMT"); break;
+		case FUNCTION_DECL: printf("FUNCTION_DECL %s", cur->svalue); break;
+		case VAR_DECL: printf("VAR_DECL %s", cur->svalue); break;
+		case PARM_DECL: printf("PARM_DECL %s", cur->svalue); break;
+		case INIT_LIST_EXPR: printf("INIT_LIST_EXPR"); break;
+		case DECL_STMT: printf("DECL_STMT"); break;
+		case TRANSLATION_UNIT: printf("TRANSLATION_UNIT"); break;
 		case NULL_STMT: printf("NULL_STMT"); break;
 		default: printf("Unknown node type!"); break;
 	}
@@ -391,12 +637,10 @@ void showAst(past node, int nest) {
 int main(int argc, char **argv)
 {
 	freopen("test.in", "r", stdin);
-	//printf("input expression: \n");
 	advance();
-	// int r = expr();
-	// printf("result: %d\n", r);
-
-	past rr = Block();
-	showAst(rr, 0);
+	past root = CompUnit();
+	showAst(root, 0);
+	assert(tok == 0); // tok = 0 意味着匹配完所有输入字符
+	//printf("tok = %d\n", tok);
 	return 0;
 }
